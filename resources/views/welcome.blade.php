@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
+        @vite(['resources/scss/main/index.scss', 'resources/js/main/index.js'])
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
