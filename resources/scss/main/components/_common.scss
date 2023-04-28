@@ -17,12 +17,22 @@ img{
 
 }
 
+a{
+    text-decoration: none;
+    color: $secondary-color;
+}
+
 .list{
     list-style: none;
 }
 
+.link {
+    text-decoration: none;
+}
+
 .button{
     border: none;
+    background-color: inherit;
 }
 
 .section{
@@ -100,7 +110,4 @@ img{
     }
 }
 
-svg {
-    fill: none;
-    stroke: $hover-color;
-}
+
