@@ -12,12 +12,11 @@
         <div class="header__container container">
             <div class="header__logo">
                 <a class="logo__link link" href="#">
-                    <svg>
-                        <use href="./img/main/sprite.svg#icon-header-logo"></use>
-                    </svg>
+
+                    <img src="./img/main/logo.svg" alt="">
                 </a>
             </div>
-            <div class="header__search-modal">
+            <div class="header__search-modal header__modal">
                 <button class="header__search button" type="button" data-target="search-menu">
                     <svg width="24" height="24">
                         <use href="./img/main/sprite.svg#icon-search"></use>
@@ -36,8 +35,8 @@
                     </div>
                     <div class="modal__contact">
                         <div class="contact__title">
-                            <p>Не нашли что искали?</p>
-                            <p>Тогда позвоните нам по телефону</p>
+                            <p>не знайшли те що шукали?</p>
+                            <p>Тоді зателефонуйте нам по телефону</p>
                         </div>
                         <ul class="contact__number-list list">
                             <li class="number-list__item"><a href="tel:+380867870012">+38 086 787 00 12</a>
@@ -92,14 +91,14 @@
                 </div>
 
             </div>
-            <div class="header__cart-modal">
+            <div class="header__cart-modal header__modal">
                 <button class="header__cart-button button" type="button" data-target="cart">
                     <svg width="24" height="24">
                         <use href="./img/main/sprite.svg#icon-cart"></use>
                     </svg>
                 </button>
             </div>
-            <div class="header__menu-modal">
+            <div class="header__menu-modal header__modal">
                 <button class="header__menu-button button" type="button" data-target="menu">
                     <div class="menu-button__wrapper">
                         <span class="menu-button__span"></span>

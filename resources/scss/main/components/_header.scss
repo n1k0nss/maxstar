@@ -32,18 +32,7 @@ header{
     height: inherit;
 }
 
-.header__search-modal{
-    display: flex;
-    align-items: center;
-    height: 65px;
-
-    & svg{
-        fill: none;
-        stroke: $primary-color;
-    }
-}
-
-.header__cart-modal{
+.header__modal{
     display: flex;
     align-items: center;
     height: 65px;
@@ -55,11 +44,7 @@ header{
     }
 }
 
-.header__menu-modal{
-    display: flex;
-    align-items: center;
-    height: 65px;
-}
+
 
 .menu-button__wrapper{
     position: relative;
