@@ -1,4 +1,6 @@
-@import '../utils/normalize';
-@import '../utils/vars';
-@import '../utils/fonts';
-@import '../utils/mixins';
+@import './utils/normalize';
+@import './utils/vars';
+@import './utils/fonts';
+@import './utils/mixins';
+@import './components/common';
+@import './components/header';
