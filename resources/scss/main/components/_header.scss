@@ -123,9 +123,262 @@ header{
 
 .search-modal__box{
     display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 65px);
+
+    .modal__search{
+        padding: 60px 24px 70px 24px;
+    }
+
+    .modal__search-form{
+        display: flex;
+        height: 50px;
+        border: 1px $primary-color solid;
+        border-radius: 60px;
+        overflow: hidden;
+
+
+
+        & input{
+            border: none;
+            width: calc(100% - 48px);
+            padding-left: 35px;
+
+
+
+        }
+
+        & button{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 48px;
+            height: 48px;
+
+            background-color: $bg-light;
+            border-radius: 50%;
+        }
+
+        & svg{
+            stroke: $hover-color;
+        }
+
+    }
+
+    .modal__contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+
+    .contact__title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+
+        p{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+            color: $head-text;
+        }
+    }
+
+    .contact__number-list{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        & svg{
+            stroke: none;
+        }
+
+        li{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 150%;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $primary-color;
+        }
+    }
+
+    .number-list__item{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+
+    .social-list{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        svg{
+            stroke: none;
+        }
+
+        li:nth-child(3) svg{
+            fill: #419FD9;
+        }
+    }
+
 }
+
 
 .menu-modal__box{
     display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 65px);
+    padding: 0 15px;
+
+    color: $secondary-color;
+
+    .modal__fav{
+        margin-top: 19px;
+
+        a{
+
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 120%;
+
+            color: $secondary-color;
+        }
+
+        .fav-icon{
+            position: relative;
+        }
+
+
+        .fav-icon::after{
+            content: '12';
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $hover-color;
+            border-radius: 50%;
+            width: 13px;
+            height: 13px;
+            top: -2px;
+            right: -3px;
+
+
+            font-weight: 700;
+            font-size: 6.66667px;
+            line-height: 120%;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #fff;
+        }
+    }
+
+    .modal__cart{
+        display: none;
+    }
+
+    .modal__nav{
+        border-top: 1px $inactive-color solid;
+        border-bottom: 1px $inactive-color solid;
+        padding: 26px 0;
+        margin-top: 23px;
+        margin-bottom: 32px;
+
+    }
+
+    .nav{
+        padding-left: 25px;
+    }
+
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        li{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 120%;
+        }
+    }
+
+    .modal__contact{
+        margin-left: 40px;
+        margin-bottom: 36px;
+    }
+
+    .contact__title{
+        p{
+            margin-bottom: 16px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: $head-text;
+        }
+    }
+
+    .contact__number-list{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        & svg{
+            stroke: none;
+        }
+
+        li{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 150%;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $primary-color;
+        }
+    }
+
+    .number-list__item{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+
+    .modal__lang-switch{
+        display: flex;
+        justify-content: center;
+    }
+
+    .lang-list{
+        display: flex;
+        flex-direction: row;
+        gap: 23px;
+    }
+
+    .lang-list__item{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 120%;
+
+        &:nth-child(1) a{
+            color: $head-text;
+        }
+
+        &:nth-child(2) a{
+            color: $inactive-color;
+        }
+    }
 }
 

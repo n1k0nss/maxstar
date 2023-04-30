@@ -25,9 +25,9 @@
                 <div class="search-modal__box">
                     <div class="modal__search">
                         <form action="" class="modal__search-form">
-                            <input class="search-form__input" type="text" placeholder="Пошук товарів" name="search">
+                            <input class="search-form__input" type="text" placeholder="Пошук товарів" name="search" autocomplete="off">
                             <button class="search-form__button button" type="submit">
-                                <svg width="20" height="20">
+                                <svg width="24" height="24">
                                     <use href="./img/main/sprite.svg#icon-search"></use>
                                 </svg>
                             </button>
@@ -35,22 +35,22 @@
                     </div>
                     <div class="modal__contact">
                         <div class="contact__title">
-                            <p>не знайшли те що шукали?</p>
+                            <p>Не знайшли те що шукали?</p>
                             <p>Тоді зателефонуйте нам по телефону</p>
                         </div>
                         <ul class="contact__number-list list">
                             <li class="number-list__item"><a href="tel:+380867870012">+38 086 787 00 12</a>
-                                 <svg width="17" height="13">
+                                 <svg width="24" height="24">
                                     <use href="./img/main/sprite.svg#icon-telegram-mini"></use>
                                 </svg>
                             </li>
                             <li class="number-list__item"><a href="tel:+380864577845">+38 086 457 78 45</a>
-                                <svg width="16" height="16">
+                                <svg width="24" height="24">
                                    <use href="./img/main/sprite.svg#icon-whatsapp-mini"></use>
                                </svg>
                            </li>
                            <li class="number-list__item"><a href="tel:+380864577845">+38 086 457 78 45</a>
-                            <svg width="15" height="17">
+                            <svg width="24" height="24">
                                <use href="./img/main/sprite.svg#icon-viber-mini"></use>
                            </svg>
                        </li>
@@ -98,6 +98,7 @@
                     </svg>
                 </button>
             </div>
+
             <div class="header__menu-modal header__modal">
                 <button class="header__menu-button button" type="button" data-target="menu">
                     <div class="menu-button__wrapper">
@@ -105,12 +106,24 @@
                     </div>
                 </button>
                 <div class="menu-modal__box">
-                    <div class="modal_fav">
+                    <div class="modal__fav">
                         <a href="#">
-                            <svg width="17" height="15">
-                                <use href="./img/main/sprite.svg#icon-heart"></use>
-                            </svg>
+                            <div class="fav-icon">
+                                <svg width="24" height="24">
+                                    <use href="./img/main/sprite.svg#icon-heart"></use>
+                                </svg>
+                            </div>
                             <span>Вибране</span>
+                        </a>
+                    </div>
+                    <div class="modal__cart">
+                        <a href="#">
+                            <div class="cart-icon">
+                                <svg width="24" height="24">
+                                    <use href="./img/main/sprite.svg#icon-cart"></use>
+                                </svg>
+                            </div>
+                            <span>Кошик</span>
                         </a>
                     </div>
                     <div class="modal__nav">
@@ -140,24 +153,24 @@
                         </div>
                         <ul class="contact__number-list list">
                             <li class="number-list__item"><a href="tel:+380867870012">+38 086 787 00 12</a>
-                                 <svg width="17" height="13">
+                                 <svg width="24" height="24">
                                     <use href="./img/main/sprite.svg#icon-telegram-mini"></use>
                                 </svg>
                             </li>
                             <li class="number-list__item"><a href="tel:+380864577845">+38 086 457 78 45</a>
-                                <svg width="16" height="16">
+                                <svg width="24" height="24">
                                    <use href="./img/main/sprite.svg#icon-whatsapp-mini"></use>
                                </svg>
                            </li>
                            <li class="number-list__item"><a href="tel:+380864577845">+38 086 457 78 45</a>
-                            <svg width="15" height="17">
+                            <svg width="24" height="24">
                                <use href="./img/main/sprite.svg#icon-viber-mini"></use>
                            </svg>
                        </li>
                         </ul>
                     </div>
                     <div class="modal__lang-switch">
-                        <ul class="lang-list">
+                        <ul class="lang-list list">
                             <li class="lang-list__item"><a href="#">Ua</a></li>
                             <li class="lang-list__item"><a href="#">Ru</a></li>
                         </ul>

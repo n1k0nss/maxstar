@@ -22,6 +22,10 @@ a{
     color: $secondary-color;
 }
 
+textarea:focus, input:focus{
+    outline: none;
+}
+
 .list{
     list-style: none;
 }
