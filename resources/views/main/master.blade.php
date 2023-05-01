@@ -12,7 +12,6 @@
         <div class="header__container container">
             <div class="header__logo">
                 <a class="logo__link link" href="#">
-
                     <img src="./img/main/logo.svg" alt="">
                 </a>
             </div>
@@ -40,19 +39,25 @@
                         </div>
                         <ul class="contact__number-list list">
                             <li class="number-list__item"><a href="tel:+380867870012">+38 086 787 00 12</a>
-                                 <svg width="24" height="24">
-                                    <use href="./img/main/sprite.svg#icon-telegram-mini"></use>
-                                </svg>
+                                 <a href="#">
+                                    <svg width="24" height="24">
+                                        <use href="./img/main/sprite.svg#icon-telegram-mini"></use>
+                                    </svg>
+                                 </a>
                             </li>
                             <li class="number-list__item"><a href="tel:+380864577845">+38 086 457 78 45</a>
-                                <svg width="24" height="24">
-                                   <use href="./img/main/sprite.svg#icon-whatsapp-mini"></use>
-                               </svg>
+                                <a href="#">
+                                    <svg width="24" height="24">
+                                        <use href="./img/main/sprite.svg#icon-whatsapp-mini"></use>
+                                    </svg>
+                                </a>
                            </li>
                            <li class="number-list__item"><a href="tel:+380864577845">+38 086 457 78 45</a>
-                            <svg width="24" height="24">
-                               <use href="./img/main/sprite.svg#icon-viber-mini"></use>
-                           </svg>
+                            <a href="#">
+                                <svg width="24" height="24">
+                                    <use href="./img/main/sprite.svg#icon-viber-mini"></use>
+                                </svg>
+                            </a>
                        </li>
                         </ul>
                     </div>
@@ -153,19 +158,25 @@
                         </div>
                         <ul class="contact__number-list list">
                             <li class="number-list__item"><a href="tel:+380867870012">+38 086 787 00 12</a>
-                                 <svg width="24" height="24">
-                                    <use href="./img/main/sprite.svg#icon-telegram-mini"></use>
-                                </svg>
+                                 <a href="#">
+                                    <svg width="24" height="24">
+                                        <use href="./img/main/sprite.svg#icon-telegram-mini"></use>
+                                    </svg>
+                                 </a>
                             </li>
                             <li class="number-list__item"><a href="tel:+380864577845">+38 086 457 78 45</a>
-                                <svg width="24" height="24">
-                                   <use href="./img/main/sprite.svg#icon-whatsapp-mini"></use>
-                               </svg>
+                                <a href="#">
+                                    <svg width="24" height="24">
+                                        <use href="./img/main/sprite.svg#icon-whatsapp-mini"></use>
+                                    </svg>
+                                </a>
                            </li>
                            <li class="number-list__item"><a href="tel:+380864577845">+38 086 457 78 45</a>
-                            <svg width="24" height="24">
-                               <use href="./img/main/sprite.svg#icon-viber-mini"></use>
-                           </svg>
+                            <a href="#">
+                                <svg width="24" height="24">
+                                    <use href="./img/main/sprite.svg#icon-viber-mini"></use>
+                                </svg>
+                            </a>
                        </li>
                         </ul>
                     </div>
@@ -182,5 +193,112 @@
     <main>
         @yield('content')
     </main>
+    <footer class="footer">
+            <div class="footer__main">
+                <div class="footer__container-main container">
+                    <div class="footer__logo">
+                        <a class="logo__link link" href="#">
+                            <img src="./img/main/footer-logo.svg" alt="">
+                        </a>
+                    </div>
+                    <address class="footer__info">
+                        <div class="footer__contacts footer__item">
+                            <span class="footer__title">Наші контакти</span>
+                            <ul class="footer__contact-list list">
+                                <li class="contact-list__item">
+                                    <a href="tel:+380867870012">+38 086 787 00 12</a>
+                                     <a href="#">
+                                        <svg width="24" height="24">
+                                            <use href="./img/main/sprite.svg#icon-telegram-mini"></use>
+                                        </svg>
+                                     </a>
+                                </li>
+                                <li class="contact-list__item">
+                                    <a href="tel:+380864577845">+38 086 457 78 45</a>
+                                    <a href="#">
+                                        <svg width="24" height="24">
+                                            <use href="./img/main/sprite.svg#icon-whatsapp-mini"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="contact-list__item">
+                                    <a href="tel:+380864577845">+38 086 457 78 45</a>
+                                <a href="#">
+                                    <svg width="24" height="24">
+                                        <use href="./img/main/sprite.svg#icon-viber-mini"></use>
+                                    </svg>
+                                </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__schedule footer__item">
+                            <span class="footer__title">Графік роботи</span>
+                            <ul class="schedule-list list">
+                                <li class="schedule-list__item">Пн-Пт: <span>9:00–18:30
+                                </span></li>
+                                <li class="schedule-list__item">Сб: <span>9:00–16:00</span>
+                                </li>
+                                <li class="schedule-list__item">Нд — <span>вихідний</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__address">
+                            <span class="footer__title">Адреса</span>
+                            <p>Головний офіс <br> <span>м.Луцьк, вул. Лесі Українки, 40</span></p>
+                        </div>
+
+                        <div class="footer__social">
+                            <ul class="footer__social-list list">
+                                <li class="social-list__item">
+                                    <a href="#">
+                                       <svg width="34" height="34">
+                                           <use href="./img/main/sprite.svg#icon-facebook"></use>
+                                       </svg>
+                                    </a>
+                               </li>
+                               <li class="social-list__item">
+                                   <a href="#">
+                                      <svg width="34" height="34">
+                                          <use href="./img/main/sprite.svg#icon-youtube"></use>
+                                      </svg>
+                                   </a>
+                              </li>
+                              <li class="social-list__item">
+                               <a href="#">
+                                  <svg width="34" height="34">
+                                      <use href="./img/main/sprite.svg#icon-telegram"></use>
+                                  </svg>
+                               </a>
+                          </li>
+                          <li class="social-list__item">
+                           <a href="#">
+                              <svg width="34" height="34">
+                                  <use href="./img/main/sprite.svg#icon-instagram"></use>
+                              </svg>
+                           </a>
+                      </li>
+                            </ul>
+                        </div>
+                    </address>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__container-bottom container">
+                    <div class="footer__company">
+                        <a href="#">
+                            <svg width="120" height="20">
+                                <use href="./img/main/sprite.svg#icon-webmaestro"></use>
+                            </svg>
+                            <span>Розробка і розкрутка сайтів</span>
+                        </a>
+                    </div>
+                    <div class="footer__copyright">
+                        <span>© «MaxStar»  2023</span>
+                    </div>
+
+                </div>
+            </div>
+    </footer>
 </body>
 </html>

@@ -213,6 +213,10 @@ header{
         display: flex;
         align-items: center;
         gap: 3px;
+
+        a{
+            display: flex;
+        }
     }
 
     .social-list{
@@ -224,10 +228,6 @@ header{
 
         svg{
             stroke: none;
-        }
-
-        li:nth-child(3) svg{
-            fill: #419FD9;
         }
     }
 
@@ -247,6 +247,7 @@ header{
 
     .modal__fav{
         margin-top: 19px;
+        padding-left: 25px;
 
         a{
 
@@ -354,6 +355,10 @@ header{
         display: flex;
         align-items: center;
         gap: 3px;
+
+        a{
+            display: flex;
+        }
     }
 
     .modal__lang-switch{
