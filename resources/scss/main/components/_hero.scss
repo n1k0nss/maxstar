@@ -1,0 +1,44 @@
+.hero__nav{
+    background-color: $bg-light;
+    border-radius: 10px;
+
+
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-list__item{
+        position: relative;
+        padding: 13px 0 13px 30px;
+
+        span{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13.7008px;
+            line-height: 16px;
+            color: $secondary-color;
+
+        }
+    }
+
+    .nav-list__item:first-child{
+        border-bottom: 0.761155px solid #DBDCDE;
+
+        span{
+            color: $hover-color;
+        }
+    }
+
+    .nav-link{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+.hero__swiper{
+    display: none;
+}
+

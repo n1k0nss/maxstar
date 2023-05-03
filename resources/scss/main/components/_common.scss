@@ -40,16 +40,42 @@ textarea:focus, input:focus{
     background-color: inherit;
 }
 
+.swiper-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $bg-light;
+
+    svg{
+        fill: none;
+        stroke: $head-text;
+        width: 12px;
+        height: 12px;
+    }
+}
+
+.swiper-button__prev{
+    transform: rotate(90deg);
+}
+
+.swiper-button__next{
+    transform: rotate(-90deg);
+}
+
 .section{
     padding: 25px 0;
 
-    &>h2{
+    & h2{
         margin: 0;
         padding: 0;
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 19px;
         color: $head-text;
 
@@ -72,17 +98,19 @@ textarea:focus, input:focus{
 }
 
 
+@include min(576px) {
+    .container {
+        max-width: 570px;
+        margin: 0 auto;
+    }
+}
+
 @include min(992px) {
     .container {
         max-width: 990px;
     }
 }
 
-@include min(1200px) {
-    .container {
-        max-width: 1170px;
-    }
-}
 
 @include min(1360px) {
     .container {
@@ -90,11 +118,6 @@ textarea:focus, input:focus{
     }
 }
 
-@include min(1560px) {
-    .container {
-        max-width: 1530px;
-    }
-}
 
 @include min(1700px) {
     .container {
