@@ -300,7 +300,6 @@
                 </div>
             </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     @vite(['resources/js/main/index.js'])
 </body>
 </html>

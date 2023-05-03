@@ -94,49 +94,49 @@
                 </button>
             </div>
         </div>
-        <div class="brands__swiper">
-            <div class="brands__swiper-wrapper">
+        <div class="brands__swiper swiper">
+            <div class="brands__swiper-wrapper swiper-wrapper">
                 <!-- Slides -->
-                <div class="brands__swiper-slide">
+                <div class="brands__swiper-slide swiper-slide">
                     <img src="./img/main/brands/samsung.png" alt="">
                 </div>
-                <div class="brands__swiper-slide">
+                <div class="brands__swiper-slide swiper-slide">
                     <img src="./img/main/brands/philips.png" alt="">
                 </div>
-                <div class="brands__swiper-slide">
+                <div class="brands__swiper-slide swiper-slide">
                     <img src="./img/main/brands/lg.svg" alt="">
                 </div>
-                <div class="brands__swiper-slide">
+                <div class="brands__swiper-slide swiper-slide">
                     <img src="./img/main/brands/akai.png" alt="">
                 </div>
-                <div class="brands__swiper-slide">
+                <div class="brands__swiper-slide swiper-slide">
                     <img src="./img/main/brands/mi.svg" alt="">
                 </div>
-                <div class="brands__swiper-slide">
+                <div class="brands__swiper-slide swiper-slide">
                     <img src="./img/main/brands/sony.png" alt="">
                 </div>
-                <div class="brands__swiper-slide">
+                <div class="brands__swiper-slide swiper-slide">
                     <img src="./img/main/brands/hisense.png" alt="">
                 </div>
-                <div class="brands__swiper-slide">
+                <div class="brands__swiper-slide swiper-slide">
                     <img src="./img/main/brands/huawei.png" alt="">
                 </div>
-                <div class="brands__swiper-slide">
+                <div class="brands__swiper-slide swiper-slide">
                     <img src="./img/main/brands/apple.svg" alt="">
                 </div>
-                <div class="brands__swiper-slide">
+                <div class="brands__swiper-slide swiper-slide">
                     <img src="./img/main/brands/canon.png" alt="">
                 </div>
-                <div class="brands__swiper-slide">
+                <div class="brands__swiper-slide swiper-slide">
                     <img src="./img/main/brands/kivi.png" alt="">
                 </div>
-                <div class="brands__swiper-slide">
+                <div class="brands__swiper-slide swiper-slide">
                     <img src="./img/main/brands/ergo.png" alt="">
                 </div>
-                <div class="brands__swiper-slide">
+                <div class="brands__swiper-slide swiper-slide">
                     <img src="./img/main/brands/bravis.webp" alt="">
                 </div>
-                <div class="brands__swiper-slide">
+                <div class="brands__swiper-slide swiper-slide">
                     <img src="./img/main/brands/dell.png" alt="">
                 </div>
             </div>
@@ -151,37 +151,37 @@
             <li class="categories-list__item">
                 <a href="">
                     <img src="./img/main/categories/mobile.jpg" alt="">
-                    <span>Телевізори</span>
+                    <span>Телефони та аксесуари</span>
                 </a>
             </li>
             <li class="categories-list__item">
                 <a href="">
                     <img src="./img/main/categories/comp.jpg" alt="">
-                    <span>Проектори</span>
+                    <span>Комп’ютери</span>
                 </a>
             </li>
             <li class="categories-list__item">
                 <a href="">
                     <img src="./img/main/categories/game.jpg" alt="">
-                    <span>Аудіо для дому</span>
+                    <span>Ігрові приставки та консолі</span>
                 </a>
             </li>
             <li class="categories-list__item">
                 <a href="">
                     <img src="./img/main/categories/wash.jpg" alt="">
-                    <span>Домашні кінотеатри</span>
+                    <span>RTV та AGD</span>
                 </a>
             </li>
             <li class="categories-list__item">
                 <a href="">
                     <img src="./img/main/categories/photo.jpg" alt="">
-                    <span>Аксесуари</span>
+                    <span>Фото та відео техніка</span>
                 </a>
             </li>
             <li class="categories-list__item">
                 <a href="">
                     <img src="./img/main/categories/concert.jpg" alt="">
-                    <span>Фото та відео техніка</span>
+                    <span>Техніка для концертів</span>
                 </a>
             </li>
 
