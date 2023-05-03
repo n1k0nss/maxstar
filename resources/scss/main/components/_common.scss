@@ -72,19 +72,6 @@ textarea:focus, input:focus{
 }
 
 
-@include min(576px) {
-    .container {
-        max-width: 570px;
-        margin: 0 auto;
-    }
-}
-
-@include min(768px) {
-    .container {
-        max-width: 750px;
-    }
-}
-
 @include min(992px) {
     .container {
         max-width: 990px;
