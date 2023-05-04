@@ -1,0 +1,37 @@
+.advantages__container{
+    h2{
+        margin-bottom: 25px;
+    }
+}
+
+
+.advantages-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.advantages-list__item{
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    border-bottom: 1px $inactive-color solid;
+
+    svg{
+        width: 55px;
+        height: 55px;
+        margin-right: 26px;
+    }
+
+    span{
+        width: calc(100% - 81px);
+
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 130%;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+
+        color: $primary-color;
+    }
+}

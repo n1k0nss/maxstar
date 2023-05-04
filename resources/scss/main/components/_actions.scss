@@ -16,6 +16,10 @@
     }
 }
 
+.actions__item:not(:last-child){
+    margin-bottom: 50px;
+}
+
 .actions__buttons{
     display: flex;
     gap: 15px;

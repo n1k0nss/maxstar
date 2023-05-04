@@ -196,12 +196,12 @@
             <div class="discount__title actions__head">
                 <h3><span>Акційні</span> пропозиції</h3>
                 <div class="actions__buttons">
-                    <button type="button" class="swiper-button swiper-button__prev">
+                    <button type="button" class="swiper-button swiper-button__prev discount-swiper-button__prev">
                         <svg>
                             <use href="./img/main/sprite.svg#icon-arrow_down"></use>
                         </svg>
                     </button>
-                    <button type="button" class="swiper-button swiper-button__next">
+                    <button type="button" class="swiper-button swiper-button__next discount-swiper-button__next">
                         <svg>
                             <use href="./img/main/sprite.svg#icon-arrow_down"></use>
                         </svg>
@@ -212,7 +212,7 @@
                 <div class="discount__swiper-wrapper swiper-wrapper">
                     <div class="discount__swiper-slide swiper-slide card">
                         <a href="">
-                            <img class="card__image" src="./img/main/categories/mobile.jpg" alt="">
+                            <img class="card__image" src="./img/main/products/1.jpg" alt="">
                         </a>
                         <div class="card__info">
                             <a class="card__name" href="">
@@ -239,7 +239,7 @@
 
                     <div class="discount__swiper-slide swiper-slide card">
                         <a href="">
-                            <img class="card__image" src="./img/main/categories/mobile.jpg" alt="">
+                            <img class="card__image" src="./img/main/products/2.jpg" alt="">
                         </a>
                         <div class="card__info">
                             <a class="card__name" href="">
@@ -266,7 +266,7 @@
 
                     <div class="discount__swiper-slide swiper-slide card">
                         <a href="">
-                            <img class="card__image" src="./img/main/categories/mobile.jpg" alt="">
+                            <img class="card__image" src="./img/main/products/3.jpg" alt="">
                         </a>
                         <div class="card__info">
                             <a class="card__name" href="">
@@ -293,7 +293,7 @@
 
                     <div class="discount__swiper-slide swiper-slide card">
                         <a href="">
-                            <img class="card__image" src="./img/main/categories/mobile.jpg" alt="">
+                            <img class="card__image" src="./img/main/products/4.jpg" alt="">
                         </a>
                         <div class="card__info">
                             <a class="card__name" href="">
@@ -320,7 +320,7 @@
 
                     <div class="discount__swiper-slide swiper-slide card">
                         <a href="">
-                            <img class="card__image" src="./img/main/categories/mobile.jpg" alt="">
+                            <img class="card__image" src="./img/main/products/5.jpg" alt="">
                         </a>
                         <div class="card__info">
                             <a class="card__name" href="">
@@ -347,7 +347,7 @@
 
                     <div class="discount__swiper-slide swiper-slide card">
                         <a href="">
-                            <img class="card__image" src="./img/main/categories/mobile.jpg" alt="">
+                            <img class="card__image" src="./img/main/products/6.jpg" alt="">
                         </a>
                         <div class="card__info">
                             <a class="card__name" href="">
@@ -379,12 +379,12 @@
             <div class="latest__title actions__head">
                 <h3><span>Останні</span> надходження</h3>
                 <div class="actions__buttons">
-                    <button class="swiper-button swiper-button__prev">
+                    <button class="swiper-button swiper-button__prev latest-swiper-button__prev">
                         <svg>
                             <use href="./img/main/sprite.svg#icon-arrow_down"></use>
                         </svg>
                     </button>
-                    <button class="swiper-button swiper-button__next">
+                    <button class="swiper-button swiper-button__next latest-swiper-button__next">
                         <svg>
                             <use href="./img/main/sprite.svg#icon-arrow_down"></use>
                         </svg>
@@ -392,7 +392,169 @@
                 </div>
             </div>
             <div class="latest__swiper actions__swiper">
-                {{-- Swiper --}}
+                <div class="latest__swiper-wrapper swiper-wrapper">
+                    <div class="latest__swiper-slide swiper-slide card">
+                        <a href="">
+                            <img class="card__image" src="./img/main/products/1.jpg" alt="">
+                        </a>
+                        <div class="card__info">
+                            <a class="card__name" href="">
+                                Телевизор Samsung UE55AU8000UXUA
+                            </a>
+                            <div class="card__code">
+                                <span class="card__code-text">Код товара:</span>
+                                <span class="card__code-number">5457578144</span>
+                            </div>
+                            <div class="card__price">
+                                <div class="card_price-text">
+                                    <span class="price__number">4 299</span>
+                                    <span class="price__type">грн.</span>
+                                </div>
+                                <button class="card__cart-button button">
+                                    <svg width="14" height="14">
+                                        <use href="./img/main/sprite.svg#icon-cart_fill"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="latest__swiper-slide swiper-slide card">
+                        <a href="">
+                            <img class="card__image" src="./img/main/products/2.jpg" alt="">
+                        </a>
+                        <div class="card__info">
+                            <a class="card__name" href="">
+                                Телевизор Samsung UE55AU8000UXUA
+                            </a>
+                            <div class="card__code">
+                                <span class="card__code-text">Код товара:</span>
+                                <span class="card__code-number">5457578144</span>
+                            </div>
+                            <div class="card__price">
+                                <div class="card_price-text">
+                                    <span class="price__number">4 299</span>
+                                    <span class="price__type">грн.</span>
+                                </div>
+                                <button class="card__cart-button button">
+                                    <svg width="14" height="14">
+                                        <use href="./img/main/sprite.svg#icon-cart_fill"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="latest__swiper-slide swiper-slide card">
+                        <a href="">
+                            <img class="card__image" src="./img/main/products/3.jpg" alt="">
+                        </a>
+                        <div class="card__info">
+                            <a class="card__name" href="">
+                                Телевизор Samsung UE55AU8000UXUA
+                            </a>
+                            <div class="card__code">
+                                <span class="card__code-text">Код товара:</span>
+                                <span class="card__code-number">5457578144</span>
+                            </div>
+                            <div class="card__price">
+                                <div class="card_price-text">
+                                    <span class="price__number">4 299</span>
+                                    <span class="price__type">грн.</span>
+                                </div>
+                                <button class="card__cart-button button">
+                                    <svg width="14" height="14">
+                                        <use href="./img/main/sprite.svg#icon-cart_fill"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="latest__swiper-slide swiper-slide card">
+                        <a href="">
+                            <img class="card__image" src="./img/main/products/4.jpg" alt="">
+                        </a>
+                        <div class="card__info">
+                            <a class="card__name" href="">
+                                Телевизор Samsung UE55AU8000UXUA
+                            </a>
+                            <div class="card__code">
+                                <span class="card__code-text">Код товара:</span>
+                                <span class="card__code-number">5457578144</span>
+                            </div>
+                            <div class="card__price">
+                                <div class="card_price-text">
+                                    <span class="price__number">4 299</span>
+                                    <span class="price__type">грн.</span>
+                                </div>
+                                <button class="card__cart-button button">
+                                    <svg width="14" height="14">
+                                        <use href="./img/main/sprite.svg#icon-cart_fill"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="latest__swiper-slide swiper-slide card">
+                        <a href="">
+                            <img class="card__image" src="./img/main/products/5.jpg" alt="">
+                        </a>
+                        <div class="card__info">
+                            <a class="card__name" href="">
+                                Телевизор Samsung UE55AU8000UXUA
+                            </a>
+                            <div class="card__code">
+                                <span class="card__code-text">Код товара:</span>
+                                <span class="card__code-number">5457578144</span>
+                            </div>
+                            <div class="card__price">
+                                <div class="card_price-text">
+                                    <span class="price__number">4 299</span>
+                                    <span class="price__type">грн.</span>
+                                </div>
+                                <button class="card__cart-button button">
+                                    <svg width="14" height="14">
+                                        <use href="./img/main/sprite.svg#icon-cart_fill"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="latest__swiper-slide swiper-slide card">
+                        <a href="">
+                            <img class="card__image" src="./img/main/products/6.jpg" alt="">
+                        </a>
+                        <div class="card__info">
+                            <a class="card__name" href="">
+                                Телевизор Samsung UE55AU8000UXUA
+                            </a>
+                            <div class="card__code">
+                                <span class="card__code-text">Код товара:</span>
+                                <span class="card__code-number">5457578144</span>
+                            </div>
+                            <div class="card__price">
+                                <div class="card_price-text">
+                                    <span class="price__number">4 299</span>
+                                    <span class="price__type">грн.</span>
+                                </div>
+                                <button class="card__cart-button button">
+                                    <svg width="14" height="14">
+                                        <use href="./img/main/sprite.svg#icon-cart_fill"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -400,12 +562,12 @@
             <div class="views__title actions__head">
                 <h3><span>Ваші</span> перегляди</h3>
                 <div class="actions__buttons">
-                    <button class="swiper-button swiper-button__prev">
+                    <button class="swiper-button swiper-button__prev views-swiper-button__prev">
                         <svg>
                             <use href="./img/main/sprite.svg#icon-arrow_down"></use>
                         </svg>
                     </button>
-                    <button class="swiper-button swiper-button__next">
+                    <button class="swiper-button swiper-button__next views-swiper-button__next">
                         <svg>
                             <use href="./img/main/sprite.svg#icon-arrow_down"></use>
                         </svg>
@@ -413,7 +575,169 @@
                 </div>
             </div>
             <div class="views__swiper actions__swiper">
-                {{-- Swiper --}}
+                <div class="views__swiper-wrapper swiper-wrapper">
+                    <div class="views__swiper-slide swiper-slide card">
+                        <a href="">
+                            <img class="card__image" src="./img/main/products/1.jpg" alt="">
+                        </a>
+                        <div class="card__info">
+                            <a class="card__name" href="">
+                                Телевизор Samsung UE55AU8000UXUA
+                            </a>
+                            <div class="card__code">
+                                <span class="card__code-text">Код товара:</span>
+                                <span class="card__code-number">5457578144</span>
+                            </div>
+                            <div class="card__price">
+                                <div class="card_price-text">
+                                    <span class="price__number">4 299</span>
+                                    <span class="price__type">грн.</span>
+                                </div>
+                                <button class="card__cart-button button">
+                                    <svg width="14" height="14">
+                                        <use href="./img/main/sprite.svg#icon-cart_fill"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="views__swiper-slide swiper-slide card">
+                        <a href="">
+                            <img class="card__image" src="./img/main/products/2.jpg" alt="">
+                        </a>
+                        <div class="card__info">
+                            <a class="card__name" href="">
+                                Телевизор Samsung UE55AU8000UXUA
+                            </a>
+                            <div class="card__code">
+                                <span class="card__code-text">Код товара:</span>
+                                <span class="card__code-number">5457578144</span>
+                            </div>
+                            <div class="card__price">
+                                <div class="card_price-text">
+                                    <span class="price__number">4 299</span>
+                                    <span class="price__type">грн.</span>
+                                </div>
+                                <button class="card__cart-button button">
+                                    <svg width="14" height="14">
+                                        <use href="./img/main/sprite.svg#icon-cart_fill"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="views__swiper-slide swiper-slide card">
+                        <a href="">
+                            <img class="card__image" src="./img/main/products/3.jpg" alt="">
+                        </a>
+                        <div class="card__info">
+                            <a class="card__name" href="">
+                                Телевизор Samsung UE55AU8000UXUA
+                            </a>
+                            <div class="card__code">
+                                <span class="card__code-text">Код товара:</span>
+                                <span class="card__code-number">5457578144</span>
+                            </div>
+                            <div class="card__price">
+                                <div class="card_price-text">
+                                    <span class="price__number">4 299</span>
+                                    <span class="price__type">грн.</span>
+                                </div>
+                                <button class="card__cart-button button">
+                                    <svg width="14" height="14">
+                                        <use href="./img/main/sprite.svg#icon-cart_fill"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="views__swiper-slide swiper-slide card">
+                        <a href="">
+                            <img class="card__image" src="./img/main/products/4.jpg" alt="">
+                        </a>
+                        <div class="card__info">
+                            <a class="card__name" href="">
+                                Телевизор Samsung UE55AU8000UXUA
+                            </a>
+                            <div class="card__code">
+                                <span class="card__code-text">Код товара:</span>
+                                <span class="card__code-number">5457578144</span>
+                            </div>
+                            <div class="card__price">
+                                <div class="card_price-text">
+                                    <span class="price__number">4 299</span>
+                                    <span class="price__type">грн.</span>
+                                </div>
+                                <button class="card__cart-button button">
+                                    <svg width="14" height="14">
+                                        <use href="./img/main/sprite.svg#icon-cart_fill"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="views__swiper-slide swiper-slide card">
+                        <a href="">
+                            <img class="card__image" src="./img/main/products/5.jpg" alt="">
+                        </a>
+                        <div class="card__info">
+                            <a class="card__name" href="">
+                                Телевизор Samsung UE55AU8000UXUA
+                            </a>
+                            <div class="card__code">
+                                <span class="card__code-text">Код товара:</span>
+                                <span class="card__code-number">5457578144</span>
+                            </div>
+                            <div class="card__price">
+                                <div class="card_price-text">
+                                    <span class="price__number">4 299</span>
+                                    <span class="price__type">грн.</span>
+                                </div>
+                                <button class="card__cart-button button">
+                                    <svg width="14" height="14">
+                                        <use href="./img/main/sprite.svg#icon-cart_fill"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="views__swiper-slide swiper-slide card">
+                        <a href="">
+                            <img class="card__image" src="./img/main/products/6.jpg" alt="">
+                        </a>
+                        <div class="card__info">
+                            <a class="card__name" href="">
+                                Телевизор Samsung UE55AU8000UXUA
+                            </a>
+                            <div class="card__code">
+                                <span class="card__code-text">Код товара:</span>
+                                <span class="card__code-number">5457578144</span>
+                            </div>
+                            <div class="card__price">
+                                <div class="card_price-text">
+                                    <span class="price__number">4 299</span>
+                                    <span class="price__type">грн.</span>
+                                </div>
+                                <button class="card__cart-button button">
+                                    <svg width="14" height="14">
+                                        <use href="./img/main/sprite.svg#icon-cart_fill"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -475,6 +799,11 @@
         <h2>Бpeндoві ocoбливocті нашого інтepнeт-мaгaзинy</h2>
         <p>Побутова техніка є тим видом товару, до вибору якого слід поставитися з усією відповідальністю, саме тому потрібно обрати спеціалізовану точку продажу такої електроніки, якою є Інтернет-магазин у м. Луцьк «MaxStar».<br><br>Сьогодні наш Інтернет-магазин побутової техніки є одним з найбільших у місті Луцьк, який постачає свої товари у інші міста та регіони України, наприклад, Чернівці, Івано-Франківськ, Луцьк та ін. Наша команда постійно аналізує динамічний український ринок, тому, обираючи категорії товарів для нашого онлайн-магазину, ми опираємося на результати оцінки попиту<br><br>Завдяки цьому до каталогу пропозицій нашого Інтернет-магазину побутової техніки постійно додаються нові позиції, а також проводяться акції та знижуються ціни на найбільш популярну електроніку. Крім цього, ми активно співпрацюємо з виробниками та постачальниками з усього світу для того, щоб забезпечити своїм клієнтам насправді широкий вибір найменувань товарів.<br><br>Серед безперечних переваг Інтернет-магазину побутової техніки та електроніки у Львові «MaxStar» слід особливо відзначити наступні: <br><br>Дизайн сайту розроблений таким чином, щоб кожен відвідувач зміг інтуїтивно зорієнтуватися та легко знайти саме ту побутову техніку, яка його цікавить (зручний каталог та функція швидкого пошуку); <br><br>Наш Луцькський Інтернет-магазин побутової техніки пропонує вам позиції, які коштують дешевше, ніж в офф-лайнових точках продажу у м. Луцьк; <br><br>У нас ви можете недорого купити побутову техніку з доставкою кур’єрською службою у будь-який населений пункт України, наприклад, Ужгород чи Тернопіль, або забрати замовлену позицію у найближчому до вас магазині нашої мережі у місті Луцьк;
         </p>
+        <button type="button" class="about__button">
+            <svg width="24" height="24">
+                <use href="./img/main/sprite.svg#icon-arrow_down"></use>
+            </svg>
+        </button>
     </div>
 </section>
 
