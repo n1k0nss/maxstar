@@ -12,6 +12,6 @@
     "dependencies": {
         "sass": "^1.62.0",
         "scss": "^0.2.4",
-        "swiper": "^8.0.7"
+        "swiper": "^8.4.7"
     }
 }

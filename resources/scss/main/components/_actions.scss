@@ -1,0 +1,112 @@
+.actions__head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+    h3{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16.2921px;
+        line-height: 19px;
+        color: $head-text;
+
+    }
+    span{
+        font-weight: 700;
+    }
+}
+
+.actions__buttons{
+    display: flex;
+    gap: 15px;
+}
+
+
+.actions__swiper{
+    .swiper-slide{
+        width: calc(50% - 10px);
+    }
+
+}
+
+.card{
+    background-color: #fff;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card__image{
+
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.card__info{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.card__name{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 130%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: $primary-color;
+}
+
+.card__code{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+
+    &-text{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 7px;
+        line-height: 130%;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: $head-text;
+    }
+
+    &-number{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 7px;
+        line-height: 130%;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: $head-text;
+    }
+}
+
+.card__price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.price__number{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 11px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: $primary-color;
+}
+
+.price__type{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 9.2322px;
+    line-height: 11px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: $primary-color;
+}
+
+

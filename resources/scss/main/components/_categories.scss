@@ -1,0 +1,46 @@
+.categories__section{
+    h2{
+        margin-bottom: 22px;
+    }
+}
+
+.categories-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.categories-list__item{
+    width: calc(50% - 10px);
+
+    img{
+        height: 120px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    span{
+        display: block;
+        margin: 20px 0;
+        position: relative;
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: $primary-color;
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: -7px;
+            left: -10px;
+            z-index: -1;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+
+            background-color: $bg-light;
+        }
+    }
+}
