@@ -15,6 +15,10 @@
         font-size: 10px;
         line-height: 150%;
         color: $primary-color;
+
+        @include min(576px){
+            font-size: 12px;
+        }
     }
 }
 

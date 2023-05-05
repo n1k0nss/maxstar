@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Maxstar</title>
 </head>
-<body>
+<body data-lock>
     <header class="header">
         <div class="header__container container">
             <div class="header__logo">
@@ -15,13 +15,13 @@
                     <img src="./img/main/logo.svg" alt="">
                 </a>
             </div>
-            <div class="header__search-modal header__modal">
-                <button class="header__search button" type="button" data-target="search-menu">
-                    <svg width="24" height="24">
+            <div class="header__modal header__search-modal ">
+                <button class="header__search button" type="button" data-target="search-menu" data-search-menu-button>
+                    <svg class="header__search-icon" width="24" height="24">
                         <use href="./img/main/sprite.svg#icon-search"></use>
                     </svg>
                 </button>
-                <div class="search-modal__box">
+                <div class="search-modal__box" data-search-menu>
                     <div class="modal__search">
                         <form action="" class="modal__search-form">
                             <input class="search-form__input" type="text" placeholder="Пошук товарів" name="search" autocomplete="off">
@@ -61,7 +61,7 @@
                        </li>
                         </ul>
                     </div>
-                    <div class="modal_social">
+                    <div class="modal__social">
                         <ul class="social-list list">
                             <li class="social-list__item">
                                  <a href="#">
@@ -104,13 +104,13 @@
                 </button>
             </div>
 
-            <div class="header__menu-modal header__modal">
-                <button class="header__menu-button button" type="button" data-target="menu">
+            <div class="header__modal header__menu-modal ">
+                <button class="header__menu-button button" type="button" data-target="menu" data-main-menu-button>
                     <div class="menu-button__wrapper">
                         <span class="menu-button__span"></span>
                     </div>
                 </button>
-                <div class="menu-modal__box">
+                <div class="menu-modal__box" data-main-menu>
                     <div class="modal__fav">
                         <a href="#">
                             <div class="fav-icon">
@@ -188,6 +188,24 @@
                     </div>
                 </div>
             </div>
+
+            <div class="header__phones">
+                <div class="phones__number">
+                    <span class="phones__number-normal">+38 086 <span class="phones__number-bold">787 00 12</span></span>
+                    <svg width="24" height="24">
+                        <use href="./img/main/sprite.svg#icon-viber-mini"></use>
+                    </svg>
+                    <button type="button" class="phones__button button">
+                        <svg width="24" height="24">
+                            <use href="./img/main/sprite.svg#icon-arrow_down"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="phones__box">
+
+                </div>
+            </div>
+
         </div>
     </header>
     <main>
@@ -247,40 +265,39 @@
                             <span class="footer__title">Адреса</span>
                             <p>Головний офіс <br> <span>м.Луцьк, вул. Лесі Українки, 40</span></p>
                         </div>
-
-                        <div class="footer__social">
-                            <ul class="footer__social-list list">
-                                <li class="social-list__item">
-                                    <a href="#">
-                                       <svg width="34" height="34">
-                                           <use href="./img/main/sprite.svg#icon-facebook"></use>
-                                       </svg>
-                                    </a>
-                               </li>
-                               <li class="social-list__item">
-                                   <a href="#">
-                                      <svg width="34" height="34">
-                                          <use href="./img/main/sprite.svg#icon-youtube"></use>
-                                      </svg>
-                                   </a>
-                              </li>
-                              <li class="social-list__item">
+                    </address>
+                    <div class="footer__social">
+                        <ul class="footer__social-list list">
+                            <li class="social-list__item">
+                                <a href="#">
+                                   <svg width="34" height="34">
+                                       <use href="./img/main/sprite.svg#icon-facebook"></use>
+                                   </svg>
+                                </a>
+                           </li>
+                           <li class="social-list__item">
                                <a href="#">
                                   <svg width="34" height="34">
-                                      <use href="./img/main/sprite.svg#icon-telegram"></use>
+                                      <use href="./img/main/sprite.svg#icon-youtube"></use>
                                   </svg>
                                </a>
                           </li>
                           <li class="social-list__item">
                            <a href="#">
                               <svg width="34" height="34">
-                                  <use href="./img/main/sprite.svg#icon-instagram"></use>
+                                  <use href="./img/main/sprite.svg#icon-telegram"></use>
                               </svg>
                            </a>
                       </li>
-                            </ul>
-                        </div>
-                    </address>
+                      <li class="social-list__item">
+                       <a href="#">
+                          <svg width="34" height="34">
+                              <use href="./img/main/sprite.svg#icon-instagram"></use>
+                          </svg>
+                       </a>
+                  </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="footer__bottom">

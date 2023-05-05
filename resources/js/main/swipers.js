@@ -7,10 +7,24 @@ import 'swiper/css/grid';
 
 Swiper.use([Grid, Navigation, Pagination]);
 
+const heroSwiper = new Swiper('.hero__swiper', {
+    loop: false,
+    direction: 'horizontal',
+
+    pagination: {
+        el: '.hero__swiper-pagination',
+        clickable: true,
+    },
+
+    navigation: {
+        nextEl:'.hero-swiper-button__next',
+        prevEl:'.hero-swiper-button__prev'
+    },
+
+})
+
 const brandsSwiper = new Swiper('.brands__swiper', {
     direction: 'horizontal',
-    slidesPerView: 2,
-    spaceBetween: 10,
     grid: {
         rows: 4,
         fill: 'row',
@@ -19,13 +33,29 @@ const brandsSwiper = new Swiper('.brands__swiper', {
     navigation: {
         nextEl:'.brands-swiper-button__next',
         prevEl:'.brands-swiper-button__prev'
+    },
+
+    breakpoints: {
+        320:{
+            slidesPerView: 2,
+            spaceBetween: 10
+        },
+
+        576: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+            grid: {
+                rows: 3,
+                fill: 'row',
+            }
+        }
     }
 });
 
 const discountSwiper = new Swiper('.discount__swiper', {
     direction: 'horizontal',
     slidesPerView: 2,
-    spaceBetween: 10,
+    spaceBetween: 15,
     grid: {
         rows: 2,
         fill: 'row',
@@ -40,7 +70,7 @@ const discountSwiper = new Swiper('.discount__swiper', {
 const latestSwiper = new Swiper('.latest__swiper', {
     direction: 'horizontal',
     slidesPerView: 2,
-    spaceBetween: 10,
+    spaceBetween: 15,
     grid: {
         rows: 2,
         fill: 'row',
@@ -55,7 +85,7 @@ const latestSwiper = new Swiper('.latest__swiper', {
 const viewsSwiper = new Swiper('.views__swiper', {
     direction: 'horizontal',
     slidesPerView: 2,
-    spaceBetween: 10,
+    spaceBetween: 15,
     grid: {
         rows: 2,
         fill: 'row',

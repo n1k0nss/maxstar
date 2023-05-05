@@ -10,6 +10,10 @@ header{
         height: 65px;
 
         background-color: $bg-light;
+
+        @include min(992px){
+            height: 50px;
+        }
     }
 }
 
@@ -17,19 +21,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
 
-.header__logo{
-    display: flex;
-    align-items: center;
-    height: 65px;
-    width: 53%;
-}
-
-.logo__link{
-    display: flex;
-    width: 135px;
-    height: inherit;
 }
 
 .header__modal{
@@ -44,6 +36,86 @@ header{
     }
 }
 
+.header__logo{
+    display: flex;
+    align-items: center;
+    height: 65px;
+    width: 53%;
+
+    @include min(992px){
+        order: 2;
+        display: flex;
+        width: 25%;
+    }
+}
+
+.header__search-modal{
+    @include min(992px){
+        order: 4;
+
+    }
+}
+
+.header__menu-modal{
+    @include min(992px){
+        order: 1;
+        width: 100%;
+        height: 50px;
+    }
+}
+
+.header__phones{
+    display: none;
+
+    .phones__number{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    .phones__number-normal{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 120%;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #000;
+    }
+
+    .phones__number-bold{
+        font-weight: 600;
+    }
+
+    .phones__button{
+        display: flex;
+        align-items: center;
+        svg{
+            fill: none;
+            stroke: $primary-color;
+        }
+    }
+
+    @include min(992px){
+        display: flex;
+        align-items: center;
+        order: 3;
+    }
+}
+
+
+.logo__link{
+    display: flex;
+    width: 135px;
+    height: inherit;
+
+    @include min(992px){
+        width: 180px;
+    }
+}
+
+
+
 
 
 .menu-button__wrapper{
@@ -56,12 +128,12 @@ header{
     display: flex;
     align-items: center;
 
-    &.active .menu-button__span{
+    &.is-open .menu-button__span{
         background-color: transparent;
         transition-delay: .15s;
     }
 
-    &.active .menu-button__span::before{
+    &.is-open .menu-button__span::before{
         background-color: $hover-color;
         top: -2px;
         width: 22px;
@@ -70,13 +142,36 @@ header{
 
     }
 
-    &.active .menu-button__span::after{
+    &.is-open .menu-button__span::after{
         background-color: $hover-color;
         top: -2px;
         width: 22px;
         transform: translate3d(0, 10px, 0) rotate(45deg);
         transition: top .2s cubic-bezier(.33333,0,.66667,.33333),transform .13s cubic-bezier(.215,.61,.355,1) .22s;
     }
+
+    @include min(992px){
+        display: none;
+    }
+}
+
+.header__cart-modal{
+    @include min(992px){
+        display: none;
+    }
+}
+
+.header__search-icon{
+    transition:all .3s ease-in ;
+
+    @include min(992px){
+        display: none;
+    }
+}
+
+.header__search.is-open .header__search-icon{
+
+    stroke: $hover-color;
 }
 
 .menu-button__span{
@@ -122,12 +217,21 @@ header{
 
 
 .search-modal__box{
-    display: none;
+    opacity: 0;
+    pointer-events: none;
     position: absolute;
     top: 65px;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - 65px);
+    background-color: #fff;
+    z-index: 10;
+    transition: opacity 0.3s ease-in;
+
+    &.is-open{
+        opacity: 1;
+        pointer-events: all;
+    }
 
     .modal__search{
         padding: 60px 24px 70px 24px;
@@ -231,19 +335,50 @@ header{
         }
     }
 
+    @include min(992px){
+        opacity: 1;
+        position: static;
+        pointer-events: all;
+        height: auto;
+        background-color: transparent;
+
+        .modal__contact{
+            display: none;
+        }
+
+        .modal__social{
+            display: none;
+        }
+
+        .modal__search{
+            padding: 0;
+            width: 400px;
+        }
+
+    }
+
 }
 
 
 .menu-modal__box{
-    display: none;
+    opacity: 0;
+    pointer-events: none;
     position: absolute;
     top: 65px;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - 65px);
     padding: 0 15px;
-
+    background-color: #fff;
+    z-index: 10;
     color: $secondary-color;
+
+    transition: opacity 0.3s ease-in;
+
+    &.is-open{
+        opacity: 1;
+        pointer-events: all;
+    }
 
     .modal__fav{
         margin-top: 19px;
@@ -268,6 +403,50 @@ header{
 
 
         .fav-icon::after{
+            content: '12';
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $hover-color;
+            border-radius: 50%;
+            width: 13px;
+            height: 13px;
+            top: -2px;
+            right: -3px;
+
+
+            font-weight: 700;
+            font-size: 6.66667px;
+            line-height: 120%;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #fff;
+        }
+    }
+
+    .modal__cart{
+        margin-top: 19px;
+        padding-left: 25px;
+
+        a{
+
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 120%;
+
+            color: $secondary-color;
+        }
+
+        .cart-icon{
+            position: relative;
+        }
+
+
+        .cart-icon::after{
             content: '12';
             position: absolute;
             display: flex;
@@ -364,6 +543,7 @@ header{
     .modal__lang-switch{
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     .lang-list{
@@ -384,6 +564,68 @@ header{
         &:nth-child(2) a{
             color: $inactive-color;
         }
+    }
+
+    @include min(992px){
+        opacity: 1;
+        pointer-events: all;
+        position: static;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $bg-light;
+        padding: 0;
+
+        .modal__contact{
+            display: none;
+        }
+
+        .modal__fav{
+            order: 3;
+            a{
+                gap: 10px;
+            }
+            margin: 0;
+            padding: 0;
+        }
+
+        .modal__nav{
+            order: 1;
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav{
+            padding: 0;
+        }
+
+        .nav-list{
+            flex-direction: row;
+        }
+
+        .modal__lang-switch{
+            order: 2;
+
+        }
+
+        .modal__cart{
+            display: block;
+            order: 4;
+            padding: 0;
+            margin: 0;
+            a{
+                gap: 10px;
+            }
+        }
+
+
+
+
+
+
     }
 }
 

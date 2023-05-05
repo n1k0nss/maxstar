@@ -36,9 +36,152 @@
         align-items: center;
         gap: 20px;
     }
+
+    @include min(992px){
+        width: 100%;
+        max-width: 310px;
+    }
+}
+
+.hero__container{
+    @include min(992px){
+        display: flex;
+        gap: 40px;
+    }
 }
 
 .hero__swiper{
     display: none;
+    position: relative;
+
+    @include min(992px){
+        display: block;
+        width: calc(100% - 310px);
+
+        .hero__swiper-slide{
+            height: 100%;
+            border-radius: 20px;
+            position: relative;
+
+
+        }
+
+        img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+        }
+    }
 }
 
+
+
+.hero-swiper-button__prev{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    z-index: 10;
+    transform: translateY(-50%) rotate(180deg);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px $hover-color solid;
+
+    &:hover{
+        background-color: $hover-color;
+        transition-duration: .3s;
+        svg{
+            fill: #fff;
+            stroke: #fff;
+        }
+    }
+
+    &.swiper-button-disabled{
+        border: none;
+        background-color: $inactive-color;
+
+        svg{
+            fill: #fff;
+            stroke: #fff;
+            transition-duration: .3s;
+        }
+    }
+
+    svg {
+        width: 18px;
+        height: 18px;
+        fill: $hover-color;
+        stroke: $hover-color;
+        transition-duration: .3s;
+    }
+}
+
+.hero-swiper-button__next{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 10;
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px $hover-color solid;
+
+    &:hover{
+        background-color: $hover-color;
+        transition-duration: .3s;
+        svg{
+            fill: #fff;
+            stroke: #fff;
+        }
+    }
+
+
+    &.swiper-button-disabled{
+        border: none;
+        background-color: $inactive-color;
+
+        svg{
+            fill: #fff;
+            stroke: #fff;
+            transition-duration: .3s;
+        }
+    }
+
+    svg {
+        width: 18px;
+        height: 18px;
+        fill: $hover-color;
+        stroke: $hover-color;
+        transition-duration: .3s;
+    }
+}
+
+.hero__swiper-pagination .swiper-pagination-bullet{
+    width: 14px;
+    height: 5px;
+    border-radius: 20px;
+    background-color: #c4c4c4;
+    transition-duration: .3s;
+}
+
+.hero__swiper-pagination .swiper-pagination-bullet-active{
+    width: 14px;
+    height: 5px;
+    border-radius: 20px;
+    background-color: $hover-color;
+    width: 100px;
+}

@@ -27,6 +27,13 @@ textarea:focus, input:focus{
     outline: none;
 }
 
+.is-locked{
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+}
+
 .list{
     list-style: none;
 }
@@ -35,9 +42,14 @@ textarea:focus, input:focus{
     text-decoration: none;
 }
 
+button{
+    cursor: pointer;
+}
+
 .button{
     border: none;
     background-color: inherit;
+
 }
 
 .swiper-button{

@@ -64,15 +64,40 @@
                 </li>
             </ul>
         </nav>
-        <div class="hero__swiper">
-            <div class="hero__swiper-wrapper">
+        <div class="hero__swiper swiper">
+            <div class="hero__swiper-wrapper swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
+                <div class="hero__swiper-slide swiper-slide">
+                    <img src="./img/main/swiper/slide1.webp" alt="Slide1">
+                </div>
+                <div class="hero__swiper-slide swiper-slide">
+                    <img src="./img/main/swiper/slide2.webp" alt="Slide1">
+                </div>
+                <div class="hero__swiper-slide swiper-slide">
+                    <img src="./img/main/swiper/slide3.webp" alt="Slide1">
+                </div>
+                <div class="hero__swiper-slide swiper-slide">
+                    <img src="./img/main/swiper/slide4.webp" alt="Slide1">
+                </div>
+                <div class="hero__swiper-slide swiper-slide">
+                    <img src="./img/main/swiper/slide5.webp" alt="Slide1">
+                </div>
+
             </div>
+
+            <button type="button" class="hero-swiper-button__prev">
+                <svg>
+                    <use href="./img/main/sprite.svg#icon-right_arrow"></use>
+                </svg>
+            </button>
+
+            <button type="button" class="hero-swiper-button__next">
+                <svg>
+                    <use href="./img/main/sprite.svg#icon-right_arrow"></use>
+                </svg>
+            </button>
               <!-- If we need pagination -->
-            <div class="hero__swiper-pagination"></div>
+            <div class="hero__swiper-pagination swiper-pagination"></div>
         </div>
     </div>
 </section>
@@ -208,7 +233,7 @@
                     </button>
                 </div>
             </div>
-            <div class="discount__swiper actions__swiper">
+            <div class="discount__swiper actions__swiper swiper">
                 <div class="discount__swiper-wrapper swiper-wrapper">
                     <div class="discount__swiper-slide swiper-slide card">
                         <a href="">
@@ -228,7 +253,7 @@
                                     <span class="price__type">грн.</span>
                                 </div>
                                 <button class="card__cart-button button">
-                                    <svg width="14" height="14">
+                                    <svg>
                                         <use href="./img/main/sprite.svg#icon-cart_fill"></use>
                                     </svg>
                                 </button>
@@ -255,7 +280,7 @@
                                     <span class="price__type">грн.</span>
                                 </div>
                                 <button class="card__cart-button button">
-                                    <svg width="14" height="14">
+                                    <svg>
                                         <use href="./img/main/sprite.svg#icon-cart_fill"></use>
                                     </svg>
                                 </button>
@@ -282,7 +307,7 @@
                                     <span class="price__type">грн.</span>
                                 </div>
                                 <button class="card__cart-button button">
-                                    <svg width="14" height="14">
+                                    <svg>
                                         <use href="./img/main/sprite.svg#icon-cart_fill"></use>
                                     </svg>
                                 </button>
@@ -309,7 +334,7 @@
                                     <span class="price__type">грн.</span>
                                 </div>
                                 <button class="card__cart-button button">
-                                    <svg width="14" height="14">
+                                    <svg>
                                         <use href="./img/main/sprite.svg#icon-cart_fill"></use>
                                     </svg>
                                 </button>
@@ -336,7 +361,7 @@
                                     <span class="price__type">грн.</span>
                                 </div>
                                 <button class="card__cart-button button">
-                                    <svg width="14" height="14">
+                                    <svg>
                                         <use href="./img/main/sprite.svg#icon-cart_fill"></use>
                                     </svg>
                                 </button>
@@ -363,7 +388,7 @@
                                     <span class="price__type">грн.</span>
                                 </div>
                                 <button class="card__cart-button button">
-                                    <svg width="14" height="14">
+                                    <svg>
                                         <use href="./img/main/sprite.svg#icon-cart_fill"></use>
                                     </svg>
                                 </button>
@@ -391,7 +416,7 @@
                     </button>
                 </div>
             </div>
-            <div class="latest__swiper actions__swiper">
+            <div class="latest__swiper actions__swiper swiper">
                 <div class="latest__swiper-wrapper swiper-wrapper">
                     <div class="latest__swiper-slide swiper-slide card">
                         <a href="">
@@ -411,7 +436,7 @@
                                     <span class="price__type">грн.</span>
                                 </div>
                                 <button class="card__cart-button button">
-                                    <svg width="14" height="14">
+                                    <svg>
                                         <use href="./img/main/sprite.svg#icon-cart_fill"></use>
                                     </svg>
                                 </button>
@@ -438,7 +463,7 @@
                                     <span class="price__type">грн.</span>
                                 </div>
                                 <button class="card__cart-button button">
-                                    <svg width="14" height="14">
+                                    <svg>
                                         <use href="./img/main/sprite.svg#icon-cart_fill"></use>
                                     </svg>
                                 </button>
@@ -465,7 +490,7 @@
                                     <span class="price__type">грн.</span>
                                 </div>
                                 <button class="card__cart-button button">
-                                    <svg width="14" height="14">
+                                    <svg>
                                         <use href="./img/main/sprite.svg#icon-cart_fill"></use>
                                     </svg>
                                 </button>
@@ -492,7 +517,7 @@
                                     <span class="price__type">грн.</span>
                                 </div>
                                 <button class="card__cart-button button">
-                                    <svg width="14" height="14">
+                                    <svg>
                                         <use href="./img/main/sprite.svg#icon-cart_fill"></use>
                                     </svg>
                                 </button>
@@ -519,7 +544,7 @@
                                     <span class="price__type">грн.</span>
                                 </div>
                                 <button class="card__cart-button button">
-                                    <svg width="14" height="14">
+                                    <svg>
                                         <use href="./img/main/sprite.svg#icon-cart_fill"></use>
                                     </svg>
                                 </button>
@@ -546,7 +571,7 @@
                                     <span class="price__type">грн.</span>
                                 </div>
                                 <button class="card__cart-button button">
-                                    <svg width="14" height="14">
+                                    <svg>
                                         <use href="./img/main/sprite.svg#icon-cart_fill"></use>
                                     </svg>
                                 </button>
@@ -574,7 +599,7 @@
                     </button>
                 </div>
             </div>
-            <div class="views__swiper actions__swiper">
+            <div class="views__swiper actions__swiper swiper">
                 <div class="views__swiper-wrapper swiper-wrapper">
                     <div class="views__swiper-slide swiper-slide card">
                         <a href="">
@@ -594,7 +619,7 @@
                                     <span class="price__type">грн.</span>
                                 </div>
                                 <button class="card__cart-button button">
-                                    <svg width="14" height="14">
+                                    <svg>
                                         <use href="./img/main/sprite.svg#icon-cart_fill"></use>
                                     </svg>
                                 </button>
@@ -621,7 +646,7 @@
                                     <span class="price__type">грн.</span>
                                 </div>
                                 <button class="card__cart-button button">
-                                    <svg width="14" height="14">
+                                    <svg>
                                         <use href="./img/main/sprite.svg#icon-cart_fill"></use>
                                     </svg>
                                 </button>
@@ -648,7 +673,7 @@
                                     <span class="price__type">грн.</span>
                                 </div>
                                 <button class="card__cart-button button">
-                                    <svg width="14" height="14">
+                                    <svg>
                                         <use href="./img/main/sprite.svg#icon-cart_fill"></use>
                                     </svg>
                                 </button>
@@ -675,7 +700,7 @@
                                     <span class="price__type">грн.</span>
                                 </div>
                                 <button class="card__cart-button button">
-                                    <svg width="14" height="14">
+                                    <svg>
                                         <use href="./img/main/sprite.svg#icon-cart_fill"></use>
                                     </svg>
                                 </button>
@@ -702,7 +727,7 @@
                                     <span class="price__type">грн.</span>
                                 </div>
                                 <button class="card__cart-button button">
-                                    <svg width="14" height="14">
+                                    <svg>
                                         <use href="./img/main/sprite.svg#icon-cart_fill"></use>
                                     </svg>
                                 </button>
@@ -729,7 +754,7 @@
                                     <span class="price__type">грн.</span>
                                 </div>
                                 <button class="card__cart-button button">
-                                    <svg width="14" height="14">
+                                    <svg>
                                         <use href="./img/main/sprite.svg#icon-cart_fill"></use>
                                     </svg>
                                 </button>
