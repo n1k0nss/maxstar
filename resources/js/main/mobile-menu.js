@@ -5,6 +5,9 @@
     const mobileSearchMenuRef = document.querySelector("[data-search-menu]");
     const lock = document.querySelector("[data-lock]");
 
+    const phoneBoxBtnRef = document.querySelector("[data-phone-box-button]");
+    const phoneBoxRef = document.querySelector("[data-phone-box]");
+
     mainMenuBtnRef.addEventListener("click", () => {
       const expanded =
         mainMenuBtnRef.getAttribute("aria-expanded") === "true" || false;
@@ -28,6 +31,17 @@
         mobileSearchMenuRef.classList.toggle("is-open");
 
         lock.classList.toggle("is-locked");
+
+      });
+
+      phoneBoxBtnRef.addEventListener("click", () => {
+        const expanded =
+        phoneBoxBtnRef.getAttribute("aria-expanded") === "true" || false;
+
+        phoneBoxBtnRef.classList.toggle("is-open");
+        phoneBoxBtnRef.setAttribute("aria-expanded", !expanded);
+
+        phoneBoxRef.classList.toggle("is-open");
 
       });
   })();

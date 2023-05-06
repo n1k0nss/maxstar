@@ -7,6 +7,16 @@
         font-weight: 600;
         font-size: 20px;
         line-height: 23px;
+
+        @include min(992px){
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        @include min(1360px){
+            margin-bottom: 40px;
+            font-size: 26px;
+        }
     }
 
     p{
@@ -19,6 +29,10 @@
         @include min(576px){
             font-size: 12px;
         }
+
+        @include min(992px){
+            font-size: 16px;
+        }
     }
 }
 
@@ -26,6 +40,8 @@
     max-height: 600px;
     overflow: hidden;
     position: relative;
+
+    transition-duration: .5s;
 
     &::after{
         content: '';
@@ -37,18 +53,48 @@
 
         background: linear-gradient(180deg, rgba(244, 247, 249, 0) 0%, #F4F7F9 100%);
     }
+
+    &.open::after{
+        content: none;
+    }
+
 }
 
 .about__button{
     position: absolute;
-    bottom: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    bottom: 0;
     right: 10px;
-    z-index: 2;
+    z-index: 5;
     border: none;
     background-color: transparent;
+    transition-duration: .6s;
+
+    &:hover{
+        border-radius: 50%;
+        background-color: $inactive-color;
+
+    }
 
     svg{
         fill: none;
         stroke: $primary-color;
+    }
+
+    &.active{
+        transform: rotate(180deg);
+    }
+}
+
+.about__image{
+    @include min(992px){
+        float: left;
+        height: 250px;
+        width: 400px;
+        margin-right: 25px;
     }
 }

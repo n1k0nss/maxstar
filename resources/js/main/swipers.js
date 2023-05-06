@@ -48,7 +48,24 @@ const brandsSwiper = new Swiper('.brands__swiper', {
                 rows: 3,
                 fill: 'row',
             }
+
+
+        },
+        992:{
+            slidesPerView: 5,
+            spaceBetween: 20,
+            grid:{
+                rows: 2,
+                fill: 'row',
+            }
+        },
+
+        1360: {
+            slidesPerView: 7,
+            spaceBetween: 25,
         }
+
+
     }
 });
 
@@ -64,6 +81,36 @@ const discountSwiper = new Swiper('.discount__swiper', {
     navigation: {
         nextEl:'.discount-swiper-button__next',
         prevEl:'.discount-swiper-button__prev'
+    },
+
+    breakpoints: {
+        992:{
+            slidesPerView: 3,
+
+            grid: {
+                rows: 1,
+                fill: 'row',
+            },
+
+            navigation: {
+                nextEl:'.tab-swiper-button__next',
+                prevEl:'.tab-swiper-button__prev'
+            },
+        },
+
+        1360:{
+            slidesPerView: 4,
+
+            grid: {
+                rows: 1,
+                fill: 'row',
+            },
+
+            navigation: {
+                nextEl:'.tab-swiper-button__next',
+                prevEl:'.tab-swiper-button__prev'
+            },
+        },
     }
 });
 
@@ -79,6 +126,36 @@ const latestSwiper = new Swiper('.latest__swiper', {
     navigation: {
         nextEl:'.latest-swiper-button__next',
         prevEl:'.latest-swiper-button__prev'
+    },
+
+    breakpoints: {
+        992:{
+            slidesPerView: 3,
+
+            grid: {
+                rows: 1,
+                fill: 'row',
+            },
+
+            navigation: {
+                nextEl:'.tab-swiper-button__next',
+                prevEl:'.tab-swiper-button__prev'
+            },
+        },
+
+        1360:{
+            slidesPerView: 4,
+
+            grid: {
+                rows: 1,
+                fill: 'row',
+            },
+
+            navigation: {
+                nextEl:'.tab-swiper-button__next',
+                prevEl:'.tab-swiper-button__prev'
+            },
+        },
     }
 });
 
@@ -94,6 +171,38 @@ const viewsSwiper = new Swiper('.views__swiper', {
     navigation: {
         nextEl:'.views-swiper-button__next',
         prevEl:'.views-swiper-button__prev'
+    },
+
+    breakpoints: {
+        992:{
+            slidesPerView: 3,
+
+            grid: {
+                rows: 1,
+                fill: 'row',
+            },
+
+            navigation: {
+                nextEl:'.tab-swiper-button__next',
+                prevEl:'.tab-swiper-button__prev'
+            },
+        },
+
+        1360:{
+            slidesPerView: 4,
+
+            grid: {
+                rows: 1,
+                fill: 'row',
+            },
+
+            navigation: {
+                nextEl:'.tab-swiper-button__next',
+                prevEl:'.tab-swiper-button__prev'
+            },
+        },
+
+
     }
 });
 

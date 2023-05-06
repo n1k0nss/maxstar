@@ -3,6 +3,16 @@
     padding: 63px 0;
 }
 
+.footer__container-main{
+    @include min(992px){
+        display: flex;
+        justify-content: space-between;
+        gap: 60px;
+    }
+
+
+}
+
 .footer__logo{
     width: 100%;
     margin-bottom: 50px;
@@ -10,12 +20,31 @@
         display: block;
         margin: 0 auto;
     }
+
+    @include min(992px){
+        width: auto;
+    }
 }
 
 .footer__info{
     display: flex;
     flex-direction: column;
     gap: 79px;
+
+    @include min(576px){
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+
+    @include min(992px){
+        flex-direction: row;
+    }
+
+    @include min(1360px){
+        gap: 150px;
+    }
 }
 
 .footer__title{
@@ -54,6 +83,10 @@
         line-height: 150%;
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: #fff;
+
+        @include min(1360px){
+            font-size: 20px;
+        }
     }
 }
 
@@ -77,6 +110,10 @@
         span{
             font-weight: 600;
         }
+
+        @include min(1360px){
+            font-size: 20px;
+        }
 }
 
 .footer__address{
@@ -95,6 +132,18 @@
         span{
             font-weight: 600;
         }
+
+        @include min(1360px){
+            font-size: 20px;
+        }
+    }
+}
+
+.footer__social{
+    @include min(992px){
+        position: absolute;
+        top: 60px;
+        left: 10px;
     }
 }
 
@@ -113,6 +162,16 @@
     background-color: $secondary-color;
     padding-top: 20px;
     padding-bottom: 30px;
+
+    @include min(992px){
+        padding-bottom: 0;
+    }
+}
+
+.footer__container-bottom{
+    @include min(992px){
+        display: flex;
+    }
 }
 
 .footer__company{
@@ -133,6 +192,17 @@
         line-height: 9px;
         color: #fff;
     }
+
+    @include min(992px){
+        order: 2;
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+
+        a{
+            transform: translateX(-50%);
+        }
+    }
 }
 
 .footer__copyright{
@@ -146,6 +216,17 @@
         line-height: 120%;
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: #fff;
+    }
+
+    @include min(992px){
+        order: 1;
+        width: 50%;
+        align-items: center;
+        justify-content: flex-start;
+
+        span{
+            font-size: 14px;
+        }
     }
 }
 

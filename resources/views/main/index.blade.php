@@ -176,37 +176,37 @@
             <li class="categories-list__item">
                 <a href="">
                     <img src="./img/main/categories/mobile.jpg" alt="">
-                    <span>Телефони та аксесуари</span>
+                    <span class="categories__text">Телефони та аксесуари</span>
                 </a>
             </li>
             <li class="categories-list__item">
                 <a href="">
                     <img src="./img/main/categories/comp.jpg" alt="">
-                    <span>Комп’ютери</span>
+                    <span class="categories__text">Комп’ютери</span>
                 </a>
             </li>
             <li class="categories-list__item">
                 <a href="">
                     <img src="./img/main/categories/game.jpg" alt="">
-                    <span>Ігрові приставки та консолі</span>
+                    <span class="categories__text">Ігрові приставки та консолі</span>
                 </a>
             </li>
             <li class="categories-list__item">
                 <a href="">
                     <img src="./img/main/categories/wash.jpg" alt="">
-                    <span>RTV та AGD</span>
+                    <span class="categories__text">RTV та AGD</span>
                 </a>
             </li>
             <li class="categories-list__item">
                 <a href="">
                     <img src="./img/main/categories/photo.jpg" alt="">
-                    <span>Фото та відео техніка</span>
+                    <span class="categories__text">Фото та відео техніка</span>
                 </a>
             </li>
             <li class="categories-list__item">
                 <a href="">
                     <img src="./img/main/categories/concert.jpg" alt="">
-                    <span>Техніка для концертів</span>
+                    <span class="categories__text">Техніка для концертів</span>
                 </a>
             </li>
 
@@ -215,7 +215,39 @@
 </section>
 
 <section class="actions__section section">
-    <div class="actions__container-mobile container">
+    <div class="actions__container container">
+
+        <div class="actions__tab-buttons">
+            <div class="tab-buttons__box">
+                <button type="button" class="tabs__btn button" data-tab="#discounts__tab">
+                    <span class="tab-name">
+                        Акційні пропозиції
+                    </span>
+                </button>
+                <button type="button" class="tabs__btn button" data-tab="#latest__tab">
+                    <span class="tab-name">
+                        Останні надходження
+                    </span>
+                </button>
+                <button type="button" class="tabs__btn button" data-tab="#your-views__tab">
+                    <span class="tab-name">
+                        Ваші перегляди
+                    </span>
+                </button>
+            </div>
+            <div class="swiper-buttons__box">
+                <button type="button" class="swiper-button swiper-button__prev tab-swiper-button__prev">
+                    <svg>
+                        <use href="./img/main/sprite.svg#icon-arrow_down"></use>
+                    </svg>
+                </button>
+                <button type="button" class="swiper-button swiper-button__next tab-swiper-button__next">
+                    <svg>
+                        <use href="./img/main/sprite.svg#icon-arrow_down"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
 
         <div class="actions-discount actions__item">
             <div class="discount__title actions__head">
@@ -233,11 +265,11 @@
                     </button>
                 </div>
             </div>
-            <div class="discount__swiper actions__swiper swiper">
+            <div class="discount__swiper actions__swiper swiper tabs__item" id="discounts__tab">
                 <div class="discount__swiper-wrapper swiper-wrapper">
                     <div class="discount__swiper-slide swiper-slide card">
                         <a href="">
-                            <img class="card__image" src="./img/main/products/1.jpg" alt="">
+                            <img class="card__image" src="./img/main/products/3.jpg" alt="">
                         </a>
                         <div class="card__info">
                             <a class="card__name" href="">
@@ -291,33 +323,6 @@
 
                     <div class="discount__swiper-slide swiper-slide card">
                         <a href="">
-                            <img class="card__image" src="./img/main/products/3.jpg" alt="">
-                        </a>
-                        <div class="card__info">
-                            <a class="card__name" href="">
-                                Телевизор Samsung UE55AU8000UXUA
-                            </a>
-                            <div class="card__code">
-                                <span class="card__code-text">Код товара:</span>
-                                <span class="card__code-number">5457578144</span>
-                            </div>
-                            <div class="card__price">
-                                <div class="card_price-text">
-                                    <span class="price__number">4 299</span>
-                                    <span class="price__type">грн.</span>
-                                </div>
-                                <button class="card__cart-button button">
-                                    <svg>
-                                        <use href="./img/main/sprite.svg#icon-cart_fill"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="discount__swiper-slide swiper-slide card">
-                        <a href="">
                             <img class="card__image" src="./img/main/products/4.jpg" alt="">
                         </a>
                         <div class="card__info">
@@ -345,7 +350,7 @@
 
                     <div class="discount__swiper-slide swiper-slide card">
                         <a href="">
-                            <img class="card__image" src="./img/main/products/5.jpg" alt="">
+                            <img class="card__image" src="./img/main/products/1.jpg" alt="">
                         </a>
                         <div class="card__info">
                             <a class="card__name" href="">
@@ -373,6 +378,33 @@
                     <div class="discount__swiper-slide swiper-slide card">
                         <a href="">
                             <img class="card__image" src="./img/main/products/6.jpg" alt="">
+                        </a>
+                        <div class="card__info">
+                            <a class="card__name" href="">
+                                Телевизор Samsung UE55AU8000UXUA
+                            </a>
+                            <div class="card__code">
+                                <span class="card__code-text">Код товара:</span>
+                                <span class="card__code-number">5457578144</span>
+                            </div>
+                            <div class="card__price">
+                                <div class="card_price-text">
+                                    <span class="price__number">4 299</span>
+                                    <span class="price__type">грн.</span>
+                                </div>
+                                <button class="card__cart-button button">
+                                    <svg>
+                                        <use href="./img/main/sprite.svg#icon-cart_fill"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="discount__swiper-slide swiper-slide card">
+                        <a href="">
+                            <img class="card__image" src="./img/main/products/5.jpg" alt="">
                         </a>
                         <div class="card__info">
                             <a class="card__name" href="">
@@ -416,7 +448,7 @@
                     </button>
                 </div>
             </div>
-            <div class="latest__swiper actions__swiper swiper">
+            <div class="latest__swiper actions__swiper swiper tabs__item" id="latest__tab">
                 <div class="latest__swiper-wrapper swiper-wrapper">
                     <div class="latest__swiper-slide swiper-slide card">
                         <a href="">
@@ -447,34 +479,7 @@
 
                     <div class="latest__swiper-slide swiper-slide card">
                         <a href="">
-                            <img class="card__image" src="./img/main/products/2.jpg" alt="">
-                        </a>
-                        <div class="card__info">
-                            <a class="card__name" href="">
-                                Телевизор Samsung UE55AU8000UXUA
-                            </a>
-                            <div class="card__code">
-                                <span class="card__code-text">Код товара:</span>
-                                <span class="card__code-number">5457578144</span>
-                            </div>
-                            <div class="card__price">
-                                <div class="card_price-text">
-                                    <span class="price__number">4 299</span>
-                                    <span class="price__type">грн.</span>
-                                </div>
-                                <button class="card__cart-button button">
-                                    <svg>
-                                        <use href="./img/main/sprite.svg#icon-cart_fill"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="latest__swiper-slide swiper-slide card">
-                        <a href="">
-                            <img class="card__image" src="./img/main/products/3.jpg" alt="">
+                            <img class="card__image" src="./img/main/products/6.jpg" alt="">
                         </a>
                         <div class="card__info">
                             <a class="card__name" href="">
@@ -528,6 +533,33 @@
 
                     <div class="latest__swiper-slide swiper-slide card">
                         <a href="">
+                            <img class="card__image" src="./img/main/products/2.jpg" alt="">
+                        </a>
+                        <div class="card__info">
+                            <a class="card__name" href="">
+                                Телевизор Samsung UE55AU8000UXUA
+                            </a>
+                            <div class="card__code">
+                                <span class="card__code-text">Код товара:</span>
+                                <span class="card__code-number">5457578144</span>
+                            </div>
+                            <div class="card__price">
+                                <div class="card_price-text">
+                                    <span class="price__number">4 299</span>
+                                    <span class="price__type">грн.</span>
+                                </div>
+                                <button class="card__cart-button button">
+                                    <svg>
+                                        <use href="./img/main/sprite.svg#icon-cart_fill"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="latest__swiper-slide swiper-slide card">
+                        <a href="">
                             <img class="card__image" src="./img/main/products/5.jpg" alt="">
                         </a>
                         <div class="card__info">
@@ -555,7 +587,7 @@
 
                     <div class="latest__swiper-slide swiper-slide card">
                         <a href="">
-                            <img class="card__image" src="./img/main/products/6.jpg" alt="">
+                            <img class="card__image" src="./img/main/products/3.jpg" alt="">
                         </a>
                         <div class="card__info">
                             <a class="card__name" href="">
@@ -599,7 +631,7 @@
                     </button>
                 </div>
             </div>
-            <div class="views__swiper actions__swiper swiper">
+            <div class="views__swiper actions__swiper swiper tabs__item" id="your-views__tab">
                 <div class="views__swiper-wrapper swiper-wrapper">
                     <div class="views__swiper-slide swiper-slide card">
                         <a href="">
@@ -767,9 +799,6 @@
         </div>
     </div>
 
-    <div class="actions__container container">
-
-    </div>
 
 </section>
 
@@ -820,9 +849,9 @@
 
 <section class="about__section section">
     <div class="about__container container">
-        <img src="./img/main/about.jpg" alt="about image">
+        <img class="about__image" src="./img/main/about.jpg" alt="about image">
         <h2>Бpeндoві ocoбливocті нашого інтepнeт-мaгaзинy</h2>
-        <p>Побутова техніка є тим видом товару, до вибору якого слід поставитися з усією відповідальністю, саме тому потрібно обрати спеціалізовану точку продажу такої електроніки, якою є Інтернет-магазин у м. Луцьк «MaxStar».<br><br>Сьогодні наш Інтернет-магазин побутової техніки є одним з найбільших у місті Луцьк, який постачає свої товари у інші міста та регіони України, наприклад, Чернівці, Івано-Франківськ, Луцьк та ін. Наша команда постійно аналізує динамічний український ринок, тому, обираючи категорії товарів для нашого онлайн-магазину, ми опираємося на результати оцінки попиту<br><br>Завдяки цьому до каталогу пропозицій нашого Інтернет-магазину побутової техніки постійно додаються нові позиції, а також проводяться акції та знижуються ціни на найбільш популярну електроніку. Крім цього, ми активно співпрацюємо з виробниками та постачальниками з усього світу для того, щоб забезпечити своїм клієнтам насправді широкий вибір найменувань товарів.<br><br>Серед безперечних переваг Інтернет-магазину побутової техніки та електроніки у Львові «MaxStar» слід особливо відзначити наступні: <br><br>Дизайн сайту розроблений таким чином, щоб кожен відвідувач зміг інтуїтивно зорієнтуватися та легко знайти саме ту побутову техніку, яка його цікавить (зручний каталог та функція швидкого пошуку); <br><br>Наш Луцькський Інтернет-магазин побутової техніки пропонує вам позиції, які коштують дешевше, ніж в офф-лайнових точках продажу у м. Луцьк; <br><br>У нас ви можете недорого купити побутову техніку з доставкою кур’єрською службою у будь-який населений пункт України, наприклад, Ужгород чи Тернопіль, або забрати замовлену позицію у найближчому до вас магазині нашої мережі у місті Луцьк;
+        <p>Побутова техніка є тим видом товару, до вибору якого слід поставитися з усією відповідальністю, саме тому потрібно обрати спеціалізовану точку продажу такої електроніки, якою є Інтернет-магазин у м. Луцьк «MaxStar».<br><br>Сьогодні наш Інтернет-магазин побутової техніки є одним з найбільших у місті Луцьк, який постачає свої товари у інші міста та регіони України, наприклад, Чернівці, Івано-Франківськ, Луцьк та ін. Наша команда постійно аналізує динамічний український ринок, тому, обираючи категорії товарів для нашого онлайн-магазину, ми опираємося на результати оцінки попиту<br><br>Завдяки цьому до каталогу пропозицій нашого Інтернет-магазину побутової техніки постійно додаються нові позиції, а також проводяться акції та знижуються ціни на найбільш популярну електроніку. Крім цього, ми активно співпрацюємо з виробниками та постачальниками з усього світу для того, щоб забезпечити своїм клієнтам насправді широкий вибір найменувань товарів.<br><br>Серед безперечних переваг Інтернет-магазину побутової техніки та електроніки у Львові «MaxStar» слід особливо відзначити наступні: <br><br>Дизайн сайту розроблений таким чином, щоб кожен відвідувач зміг інтуїтивно зорієнтуватися та легко знайти саме ту побутову техніку, яка його цікавить (зручний каталог та функція швидкого пошуку); <br><br>Наш Луцький Інтернет-магазин побутової техніки пропонує вам позиції, які коштують дешевше, ніж в офф-лайнових точках продажу у м. Луцьк; <br><br>У нас ви можете недорого купити побутову техніку з доставкою кур’єрською службою у будь-який населений пункт України, наприклад, Ужгород чи Тернопіль, або забрати замовлену позицію у найближчому до вас магазині нашої мережі у місті Луцьк; <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quibusdam reprehenderit ducimus eius ex autem, assumenda quaerat enim soluta illum illo, ab quis fugit similique repellat ut harum minima, nam praesentium dolor in! Laborum suscipit in culpa facilis? Aperiam quisquam unde fugiat consequuntur perspiciatis voluptates est odit doloribus ipsam eligendi ab corporis nemo ratione, veniam, adipisci nihil officiis ipsum sequi repellat praesentium. Molestias explicabo recusandae reprehenderit illo id error magnam hic aut mollitia, fugiat rem doloribus itaque repellendus vero! Alias vitae reprehenderit qui inventore dicta illo exercitationem adipisci impedit quas! Libero esse nam accusamus aliquid corporis exercitationem excepturi iusto molestias temporibus quas deserunt pariatur illum maxime, voluptatem consequuntur repellendus amet? Repellendus expedita porro deleniti sapiente. Quaerat consequatur id ex porro architecto, tenetur illum facere recusandae laboriosam labore molestiae laudantium reprehenderit officia provident ullam eligendi aliquid obcaecati nesciunt. Illum vitae commodi eveniet? Incidunt eaque tempora nihil non, suscipit excepturi ducimus quis esse modi eius quia totam laudantium cum officia quod sit ea tenetur voluptatibus molestias et minima vel doloribus maxime? Ipsum, dolore! Quam et quas porro facilis, sit libero. Expedita ex quia deleniti, odit, ipsam quisquam quaerat vitae excepturi sit reiciendis eum, totam quos quas repellendus officiis blanditiis id doloribus iure.
         </p>
         <button type="button" class="about__button">
             <svg width="24" height="24">

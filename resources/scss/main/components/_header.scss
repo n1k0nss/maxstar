@@ -66,6 +66,7 @@ header{
 
 .header__phones{
     display: none;
+    position: relative;
 
     .phones__number{
         display: flex;
@@ -94,6 +95,11 @@ header{
             fill: none;
             stroke: $primary-color;
         }
+        transition-duration: .3s;
+
+        &.is-open{
+            transform: rotate(180deg);
+        }
     }
 
     @include min(992px){
@@ -101,6 +107,97 @@ header{
         align-items: center;
         order: 3;
     }
+
+    .phones__box{
+        display: none;
+
+        @include min(992px){
+            opacity: 0;
+            pointer-events: none;
+            display: block;
+            flex-direction: column;
+            position: absolute;
+            padding: 30px;
+            margin-top: 10px;
+            border-radius: 20px;
+            box-shadow: 0 0 40px rgba(90,129,154,.3);
+            top: 100%;
+            right: 0;
+            background-color: #fff;
+            z-index: 20;
+            width: 100%;
+
+            transition-duration: .4s;
+
+            &.is-open{
+                opacity: 1;
+                pointer-events: all;
+            }
+        }
+    }
+
+    .contact__number-list{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .number-list__item{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .number-list__phone{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: $primary-color;
+
+    }
+
+    .phones__plan{
+        margin-top: 30px;
+    }
+
+    .phones__title{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: $head-text;
+    }
+
+    .phones__plan-list{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .plan-list__item{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 120%;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: $primary-color;
+
+        span{
+            font-weight: 600;
+        }
+}
+
+
 }
 
 
@@ -357,6 +454,12 @@ header{
 
     }
 
+    @include min(1360px){
+        .modal__search{
+            width: 550px;
+        }
+    }
+
 }
 
 
@@ -395,6 +498,23 @@ header{
             line-height: 120%;
 
             color: $secondary-color;
+        }
+
+        span{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 120%;
+            color: $secondary-color;
+            transition-duration: .3s;
+
+            @include min(992px){
+                font-weight: 600;
+            }
+        }
+
+        &:hover span{
+            color: $hover-color;
         }
 
         .fav-icon{
@@ -439,6 +559,24 @@ header{
             line-height: 120%;
 
             color: $secondary-color;
+        }
+
+        span{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 120%;
+            color: $secondary-color;
+
+            transition-duration: .3s;
+
+            @include min(992px){
+                font-weight: 600;
+            }
+        }
+
+        &:hover span{
+            color: $hover-color;
         }
 
         .cart-icon{
@@ -490,11 +628,25 @@ header{
         flex-direction: column;
         gap: 20px;
 
-        li{
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 120%;
+        @include min(1360px){
+            gap: 60px;
         }
+    }
+
+    .nav-list__item{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: $secondary-color;
+
+        &:hover .nav-link{
+            color: $hover-color;
+        }
+    }
+
+    .nav-link{
+        transition-duration: .3s;
+
     }
 
     .modal__contact{
