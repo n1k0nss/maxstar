@@ -12,6 +12,13 @@
       const expanded =
         mainMenuBtnRef.getAttribute("aria-expanded") === "true" || false;
 
+
+        if(mobileSearchMenuRef.classList.contains("is-open")){
+            searchMenuBtnRef.classList.remove("is-open");
+            mobileSearchMenuRef.classList.remove("is-open");
+            lock.classList.remove("is-locked");
+        }
+
       mainMenuBtnRef.classList.toggle("is-open");
       mainMenuBtnRef.setAttribute("aria-expanded", !expanded);
 
@@ -25,8 +32,16 @@
         const expanded =
         searchMenuBtnRef.getAttribute("aria-expanded") === "true" || false;
 
+
+        if(mobileMainMenuRef.classList.contains("is-open")){
+            mainMenuBtnRef.classList.remove("is-open");
+            mobileMainMenuRef.classList.remove("is-open");
+            lock.classList.remove("is-locked");
+        }
+
         searchMenuBtnRef.classList.toggle("is-open");
         searchMenuBtnRef.setAttribute("aria-expanded", !expanded);
+
 
         mobileSearchMenuRef.classList.toggle("is-open");
 

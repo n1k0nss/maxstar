@@ -1,6 +1,6 @@
 .actions__section{
     @include min(1360px){
-        margin-bottom: 50px;
+        margin-bottom: 95px;
     }
 }
 
@@ -19,18 +19,31 @@
         @include min(576px){
             font-size: 18px;
         }
+
+
     }
     span{
         font-weight: 700;
     }
 
     @include min(992px){
-        display: none;
+        h3{
+            display: none;
+        }
+
+        position: absolute;
+        right: 0;
+        top: 0;
     }
+
+
+
+
 }
 
 .actions__item .actions__swiper{
     padding: 10px;
+    margin: 0 -20px;
 }
 
 .actions__item:not(:last-child){
@@ -44,6 +57,15 @@
 .actions__buttons{
     display: flex;
     gap: 15px;
+
+    @include min(992px){
+        display: none;
+
+        &.active{
+            display: flex;
+        }
+    }
+
 }
 
 
@@ -226,6 +248,10 @@
     .tab-name{
         font-size: 24px;
         font-weight: 700;
+
+        @include min(1360px){
+            font-size: 30px;
+        }
     }
 }
 
@@ -235,14 +261,10 @@
     font-size: 20px;
     line-height: 28px;
     color: $head-text;
-}
 
-.swiper-buttons__box{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-
-
+    @include min(1360px){
+        font-size: 24px;
+    }
 }
 
 .tabs__item{

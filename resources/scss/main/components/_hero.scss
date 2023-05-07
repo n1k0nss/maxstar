@@ -1,3 +1,9 @@
+.hero__section{
+    @include min(1360px){
+        margin-bottom: 50px;
+    }
+}
+
 .hero__nav{
     background-color: $bg-light;
     border-radius: 10px;

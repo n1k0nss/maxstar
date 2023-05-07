@@ -219,32 +219,20 @@
 
         <div class="actions__tab-buttons">
             <div class="tab-buttons__box">
-                <button type="button" class="tabs__btn button" data-tab="#discounts__tab">
+                <button type="button" class="tabs__btn button" data-tab="#discounts__tab" data-swiper-tab="#swiper1">
                     <span class="tab-name">
                         Акційні пропозиції
                     </span>
                 </button>
-                <button type="button" class="tabs__btn button" data-tab="#latest__tab">
+                <button type="button" class="tabs__btn button" data-tab="#latest__tab" data-swiper-tab="#swiper2">
                     <span class="tab-name">
                         Останні надходження
                     </span>
                 </button>
-                <button type="button" class="tabs__btn button" data-tab="#your-views__tab">
+                <button type="button" class="tabs__btn button" data-tab="#your-views__tab" data-swiper-tab="#swiper3">
                     <span class="tab-name">
                         Ваші перегляди
                     </span>
-                </button>
-            </div>
-            <div class="swiper-buttons__box">
-                <button type="button" class="swiper-button swiper-button__prev tab-swiper-button__prev">
-                    <svg>
-                        <use href="./img/main/sprite.svg#icon-arrow_down"></use>
-                    </svg>
-                </button>
-                <button type="button" class="swiper-button swiper-button__next tab-swiper-button__next">
-                    <svg>
-                        <use href="./img/main/sprite.svg#icon-arrow_down"></use>
-                    </svg>
                 </button>
             </div>
         </div>
@@ -252,7 +240,7 @@
         <div class="actions-discount actions__item">
             <div class="discount__title actions__head">
                 <h3><span>Акційні</span> пропозиції</h3>
-                <div class="actions__buttons">
+                <div class="actions__buttons" id="swiper1">
                     <button type="button" class="swiper-button swiper-button__prev discount-swiper-button__prev">
                         <svg>
                             <use href="./img/main/sprite.svg#icon-arrow_down"></use>
@@ -297,6 +285,33 @@
                     <div class="discount__swiper-slide swiper-slide card">
                         <a href="">
                             <img class="card__image" src="./img/main/products/2.jpg" alt="">
+                        </a>
+                        <div class="card__info">
+                            <a class="card__name" href="">
+                                Телевизор Samsung UE55AU8000UXUA
+                            </a>
+                            <div class="card__code">
+                                <span class="card__code-text">Код товара:</span>
+                                <span class="card__code-number">5457578144</span>
+                            </div>
+                            <div class="card__price">
+                                <div class="card_price-text">
+                                    <span class="price__number">4 299</span>
+                                    <span class="price__type">грн.</span>
+                                </div>
+                                <button class="card__cart-button button">
+                                    <svg>
+                                        <use href="./img/main/sprite.svg#icon-cart_fill"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="discount__swiper-slide swiper-slide card">
+                        <a href="">
+                            <img class="card__image" src="./img/main/products/3.jpg" alt="">
                         </a>
                         <div class="card__info">
                             <a class="card__name" href="">
@@ -435,7 +450,7 @@
         <div class="actions__latest actions__item">
             <div class="latest__title actions__head">
                 <h3><span>Останні</span> надходження</h3>
-                <div class="actions__buttons">
+                <div class="actions__buttons" id="swiper2">
                     <button class="swiper-button swiper-button__prev latest-swiper-button__prev">
                         <svg>
                             <use href="./img/main/sprite.svg#icon-arrow_down"></use>
@@ -618,7 +633,7 @@
         <div class="actions__views actions__item">
             <div class="views__title actions__head">
                 <h3><span>Ваші</span> перегляди</h3>
-                <div class="actions__buttons">
+                <div class="actions__buttons" id="swiper3">
                     <button class="swiper-button swiper-button__prev views-swiper-button__prev">
                         <svg>
                             <use href="./img/main/sprite.svg#icon-arrow_down"></use>
@@ -663,6 +678,33 @@
                     <div class="views__swiper-slide swiper-slide card">
                         <a href="">
                             <img class="card__image" src="./img/main/products/2.jpg" alt="">
+                        </a>
+                        <div class="card__info">
+                            <a class="card__name" href="">
+                                Телевизор Samsung UE55AU8000UXUA
+                            </a>
+                            <div class="card__code">
+                                <span class="card__code-text">Код товара:</span>
+                                <span class="card__code-number">5457578144</span>
+                            </div>
+                            <div class="card__price">
+                                <div class="card_price-text">
+                                    <span class="price__number">4 299</span>
+                                    <span class="price__type">грн.</span>
+                                </div>
+                                <button class="card__cart-button button">
+                                    <svg>
+                                        <use href="./img/main/sprite.svg#icon-cart_fill"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="views__swiper-slide swiper-slide card">
+                        <a href="">
+                            <img class="card__image" src="./img/main/products/1.jpg" alt="">
                         </a>
                         <div class="card__info">
                             <a class="card__name" href="">
@@ -743,6 +785,33 @@
 
                     <div class="views__swiper-slide swiper-slide card">
                         <a href="">
+                            <img class="card__image" src="./img/main/products/2.jpg" alt="">
+                        </a>
+                        <div class="card__info">
+                            <a class="card__name" href="">
+                                Телевизор Samsung UE55AU8000UXUA
+                            </a>
+                            <div class="card__code">
+                                <span class="card__code-text">Код товара:</span>
+                                <span class="card__code-number">5457578144</span>
+                            </div>
+                            <div class="card__price">
+                                <div class="card_price-text">
+                                    <span class="price__number">4 299</span>
+                                    <span class="price__type">грн.</span>
+                                </div>
+                                <button class="card__cart-button button">
+                                    <svg>
+                                        <use href="./img/main/sprite.svg#icon-cart_fill"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="views__swiper-slide swiper-slide card">
+                        <a href="">
                             <img class="card__image" src="./img/main/products/5.jpg" alt="">
                         </a>
                         <div class="card__info">
@@ -771,6 +840,33 @@
                     <div class="views__swiper-slide swiper-slide card">
                         <a href="">
                             <img class="card__image" src="./img/main/products/6.jpg" alt="">
+                        </a>
+                        <div class="card__info">
+                            <a class="card__name" href="">
+                                Телевизор Samsung UE55AU8000UXUA
+                            </a>
+                            <div class="card__code">
+                                <span class="card__code-text">Код товара:</span>
+                                <span class="card__code-number">5457578144</span>
+                            </div>
+                            <div class="card__price">
+                                <div class="card_price-text">
+                                    <span class="price__number">4 299</span>
+                                    <span class="price__type">грн.</span>
+                                </div>
+                                <button class="card__cart-button button">
+                                    <svg>
+                                        <use href="./img/main/sprite.svg#icon-cart_fill"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="views__swiper-slide swiper-slide card">
+                        <a href="">
+                            <img class="card__image" src="./img/main/products/2.jpg" alt="">
                         </a>
                         <div class="card__info">
                             <a class="card__name" href="">

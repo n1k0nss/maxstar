@@ -85,20 +85,6 @@ const discountSwiper = new Swiper('.discount__swiper', {
 
     breakpoints: {
         992:{
-            slidesPerView: 3,
-
-            grid: {
-                rows: 1,
-                fill: 'row',
-            },
-
-            navigation: {
-                nextEl:'.tab-swiper-button__next',
-                prevEl:'.tab-swiper-button__prev'
-            },
-        },
-
-        1360:{
             slidesPerView: 4,
 
             grid: {
@@ -106,10 +92,16 @@ const discountSwiper = new Swiper('.discount__swiper', {
                 fill: 'row',
             },
 
-            navigation: {
-                nextEl:'.tab-swiper-button__next',
-                prevEl:'.tab-swiper-button__prev'
+        },
+
+        1360:{
+            slidesPerView: 6,
+
+            grid: {
+                rows: 1,
+                fill: 'row',
             },
+
         },
     }
 });
@@ -130,20 +122,6 @@ const latestSwiper = new Swiper('.latest__swiper', {
 
     breakpoints: {
         992:{
-            slidesPerView: 3,
-
-            grid: {
-                rows: 1,
-                fill: 'row',
-            },
-
-            navigation: {
-                nextEl:'.tab-swiper-button__next',
-                prevEl:'.tab-swiper-button__prev'
-            },
-        },
-
-        1360:{
             slidesPerView: 4,
 
             grid: {
@@ -151,10 +129,16 @@ const latestSwiper = new Swiper('.latest__swiper', {
                 fill: 'row',
             },
 
-            navigation: {
-                nextEl:'.tab-swiper-button__next',
-                prevEl:'.tab-swiper-button__prev'
+        },
+
+        1360:{
+            slidesPerView: 6,
+
+            grid: {
+                rows: 1,
+                fill: 'row',
             },
+
         },
     }
 });
@@ -175,20 +159,6 @@ const viewsSwiper = new Swiper('.views__swiper', {
 
     breakpoints: {
         992:{
-            slidesPerView: 3,
-
-            grid: {
-                rows: 1,
-                fill: 'row',
-            },
-
-            navigation: {
-                nextEl:'.tab-swiper-button__next',
-                prevEl:'.tab-swiper-button__prev'
-            },
-        },
-
-        1360:{
             slidesPerView: 4,
 
             grid: {
@@ -196,9 +166,14 @@ const viewsSwiper = new Swiper('.views__swiper', {
                 fill: 'row',
             },
 
-            navigation: {
-                nextEl:'.tab-swiper-button__next',
-                prevEl:'.tab-swiper-button__prev'
+        },
+
+        1360:{
+            slidesPerView: 6,
+
+            grid: {
+                rows: 1,
+                fill: 'row',
             },
         },
 

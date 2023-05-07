@@ -147,7 +147,7 @@ button{
             font-size: 24px;
         }
 
-        @include min(1200px){
+        @include min(1360px){
             font-size: 30px;
         }
 
@@ -185,7 +185,7 @@ button{
 
 @include min(1700px) {
     .container {
-        max-width: 1600px;
+        max-width: 1670px;
     }
 }
 

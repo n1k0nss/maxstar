@@ -1,5 +1,6 @@
 const tabsBtn = document.querySelectorAll('.tabs__btn');
 const tabsItems = document.querySelectorAll('.tabs__item');
+const tabsSwiperBtn = document.querySelectorAll('.actions__buttons');
 
 tabsBtn.forEach(onTabClick);
 
@@ -7,7 +8,9 @@ function onTabClick(e){
     e.addEventListener("click", function(){
         let currentBtn = e;
         let tabId = currentBtn.getAttribute("data-tab");
+        let tabSwiperId = currentBtn.getAttribute("data-swiper-tab");
         let currentTab = document.querySelector(tabId);
+        let currentSwiperBtn = document.querySelector(tabSwiperId);
 
         if(!currentBtn.classList.contains('active')){
             tabsBtn.forEach(function(item){
@@ -18,8 +21,13 @@ function onTabClick(e){
                 item.classList.remove('active');
             });
 
+            tabsSwiperBtn.forEach(function(item){
+                item.classList.remove('active');
+            });
+
             currentBtn.classList.add('active');
             currentTab.classList.add('active');
+            currentSwiperBtn.classList.add('active');
 
 
         }
