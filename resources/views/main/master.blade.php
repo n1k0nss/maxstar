@@ -353,5 +353,6 @@
             </div>
     </footer>
     @vite(['resources/js/main/index.js'])
+
 </body>
 </html>

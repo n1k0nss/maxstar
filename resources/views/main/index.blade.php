@@ -958,4 +958,63 @@
 </section>
 
 
+{{-- formTask --}}
+<section class="task__section section">
+    <div class="task__container">
+        <div class="task">
+            <h2>Залиште свій відгук!</h2>
+            <form name="task" action="" class="task__form">
+
+                <input type="text" class="task__name" name="name" placeholder="Ім'я">
+
+                <input type="text" class="task__surname" name="surname" placeholder="Прізвище">
+
+                <textarea class="task__comment" name="comment" id="form__comment" placeholder="Текст відгуку"></textarea>
+
+                <div class="task__ratings">
+                    <span>Ваша оцінка:</span>
+                    <div class="ratings-buttons">
+
+                        <input class="ratings__input" type="radio" name="nameRating" value="5" id="rate-5">
+                        <label class="ratings__label" for="rate-5">&#9733</label>
+
+                        <input class="ratings__input" type="radio" name="nameRating" value="4" id="rate-4">
+                        <label class="ratings__label" for="rate-4">&#9733</label>
+
+                        <input class="ratings__input" type="radio" name="nameRating" value="3" id="rate-3">
+                        <label class="ratings__label" for="rate-3">&#9733</label>
+
+                        <input class="ratings__input" type="radio" name="nameRating" value="2" id="rate-2">
+                        <label class="ratings__label" for="rate-2">&#9733</label>
+
+                        <input class="ratings__input" type="radio" name="nameRating" value="1" id="rate-1">
+                        <label class="ratings__label" for="rate-1">&#9733</label>
+
+                    </div>
+                    <span class="rating-text"></span>
+                </div>
+
+                <div class="task__file">
+                        <div class="file__load">
+                            <div class="file__label">
+                                <div class="butafor-button">
+                                    <svg width="20" height="20">
+                                        <use href="./img/main/sprite.svg#icon-category_photo"></use>
+                                    </svg>
+                                    <span>Прикріпити фото</span>
+                                </div>
+                                <input accept=".jpg, .png" type="file" name="image" class="file__input" multiple>
+                        </div>
+                    </div>
+                    <div class="file__preview">
+                    </div>
+                </div>
+
+                <button class="task__submit" type="submit">Надіслати</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
 @endsection
