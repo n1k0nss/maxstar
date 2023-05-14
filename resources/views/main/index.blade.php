@@ -965,9 +965,9 @@
             <h2>Залиште свій відгук!</h2>
             <form name="task" action="" class="task__form">
 
-                <input type="text" class="task__name" name="name" placeholder="Ім'я">
+                <input type="text" class="task__name" name="name" placeholder="Ім'я" required minlength="2">
 
-                <input type="text" class="task__surname" name="surname" placeholder="Прізвище">
+                <input type="text" class="task__surname" name="surname" placeholder="Прізвище" required minlength="2">
 
                 <textarea class="task__comment" name="comment" id="form__comment" placeholder="Текст відгуку"></textarea>
 
@@ -1003,7 +1003,7 @@
                                     </svg>
                                     <span>Прикріпити фото</span>
                                 </div>
-                                <input accept=".jpg, .png" type="file" name="image" class="file__input" multiple>
+                                <input accept=".jpg, .png" type="file"  class="file__input" multiple>
                         </div>
                     </div>
                     <div class="file__preview">
@@ -1013,6 +1013,12 @@
                 <button class="task__submit" type="submit">Надіслати</button>
             </form>
         </div>
+    </div>
+
+    <div class="comments container">
+        <h2 class="comments__title">Відгуки</h2>
+
+
     </div>
 </section>
 
